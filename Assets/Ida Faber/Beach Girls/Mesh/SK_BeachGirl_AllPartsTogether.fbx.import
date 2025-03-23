@@ -1,0 +1,574 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://dmtc7gctcqhfr"
+path="res://.godot/imported/SK_BeachGirl_AllPartsTogether.fbx-6279cd737d484c330910c0496cf36530.scn"
+
+[deps]
+
+source_file="res://Assets/Ida Faber/Beach Girls/Mesh/SK_BeachGirl_AllPartsTogether.fbx"
+dest_files=["res://.godot/imported/SK_BeachGirl_AllPartsTogether.fbx-6279cd737d484c330910c0496cf36530.scn"]
+
+[params]
+
+nodes/root_type=""
+nodes/root_name=""
+nodes/apply_root_scale=true
+nodes/root_scale=1.0
+nodes/import_as_skeleton_bones=true
+nodes/use_node_type_suffixes=true
+meshes/ensure_tangents=1
+meshes/generate_lods=true
+meshes/create_shadow_meshes=false
+meshes/light_baking=1
+meshes/lightmap_texel_size=0.2
+meshes/force_disable_compression=false
+skins/use_named_skins=true
+animation/import=true
+animation/fps=30.0
+animation/trimming=true
+animation/remove_immutable_tracks=true
+animation/import_rest_as_RESET=true
+import_script/path=""
+_subresources={
+"animations": {
+&"Take 001": {
+"save_to_file/enabled": true,
+"save_to_file/keep_custom_tracks": true,
+"save_to_file/path": "res://Assets/Ida Faber/Beach Girls/Mesh/extracted/SK_BeachGirl_AllPartsTogether.anim"
+}
+},
+"materials": {
+"MAT_BG_ACCESSORIES": {
+"use_external/enabled": true,
+"use_external/path": "res://Assets/Ida Faber/Beach Girls/Materials/MAT_BG_ACCESSORIES.material"
+},
+"MAT_BG_BIKINI_SET_01": {
+"use_external/enabled": true,
+"use_external/path": "res://Assets/Ida Faber/Beach Girls/Materials/Bikini set 01/MAT_BG_BIKINI_SET_01 Color 03.material"
+},
+"MAT_BG_BIKINI_SET_02": {
+"use_external/enabled": true,
+"use_external/path": "res://Assets/Ida Faber/Beach Girls/Materials/Bikini set 02/MAT_BG_BIKINI_SET_02 Color 09.material"
+},
+"MAT_BG_BIKINI_SET_03": {
+"use_external/enabled": true,
+"use_external/path": "res://Assets/Ida Faber/Beach Girls/Materials/Bikini set 03/MAT_BG_BIKINI_SET_03 Color 14.material"
+},
+"MAT_BG_BODY1": {
+"use_external/enabled": true,
+"use_external/path": "res://Assets/Ida Faber/Beach Girls/Materials/Base/MAT_BG_BODY.material"
+},
+"MAT_BG_CENSOR": {
+"use_external/enabled": true,
+"use_external/path": "res://Assets/Ida Faber/Beach Girls/Materials/Base/MAT_BG_CENSOR.material"
+},
+"MAT_BG_EYES2": {
+"use_external/enabled": true,
+"use_external/path": "res://Assets/Ida Faber/Beach Girls/Materials/Base/MAT_BG_EYES Blue.material"
+},
+"MAT_BG_EYES3": {
+"use_external/enabled": true,
+"use_external/path": "res://Assets/Ida Faber/Beach Girls/Materials/Base/MAT_BG_EYES Brown.material"
+},
+"MAT_BG_EYESHADOW2": {
+"use_external/enabled": true,
+"use_external/path": "res://Assets/Ida Faber/Beach Girls/Materials/Base/MAT_BG_EYESHADOW.material"
+},
+"MAT_BG_HAIR_V1": {
+"use_external/enabled": true,
+"use_external/path": "res://Assets/Ida Faber/Beach Girls/Materials/Base/MAT_BG_HAIR_01 Brown.material"
+},
+"MAT_BG_HAIR_V2": {
+"use_external/enabled": true,
+"use_external/path": "res://Assets/Ida Faber/Beach Girls/Materials/Base/MAT_BG_HAIR_02 Brown.material"
+},
+"MAT_BG_HAIR_V3": {
+"use_external/enabled": true,
+"use_external/path": "res://Assets/Ida Faber/Beach Girls/Materials/Base/MAT_BG_HAIR_03 Brown.material"
+},
+"MAT_BG_HAT": {
+"use_external/enabled": true,
+"use_external/path": "res://Assets/Ida Faber/Beach Girls/Materials/MAT_BG_HAT.material"
+},
+"MAT_BG_HEAD2": {
+"use_external/enabled": true,
+"use_external/path": "res://Assets/Ida Faber/Beach Girls/Materials/Base/MAT_BG_HEAD_02.material"
+},
+"MAT_BG_HEAD4": {
+"use_external/enabled": true,
+"use_external/path": "res://Assets/Ida Faber/Beach Girls/Materials/Base/MAT_BG_HEAD_04.material"
+},
+"MAT_BG_HEAD5": {
+"use_external/enabled": true,
+"use_external/path": "res://Assets/Ida Faber/Beach Girls/Materials/Base/MAT_BG_HEAD_05 Dark.material"
+},
+"MAT_BG_LASHES2": {
+"use_external/enabled": true,
+"use_external/path": "res://Assets/Ida Faber/Beach Girls/Materials/Base/MAT_BG_LASHES.material"
+},
+"MAT_BG_LASHES3": {
+"use_external/enabled": true,
+"use_external/path": "res://Assets/Ida Faber/Beach Girls/Materials/Base/MAT_BG_LASHES.material"
+},
+"MAT_BG_SHOES": {
+"use_external/enabled": true,
+"use_external/path": "res://Assets/Ida Faber/Beach Girls/Materials/MAT_BG_SHOES White.material"
+},
+"MAT_BG_SUNGLASSES": {
+"use_external/enabled": true,
+"use_external/path": "res://Assets/Ida Faber/Beach Girls/Materials/MAT_BG_SUNGLASSES.material"
+},
+"MAT_BG_SWIMSUIT_01": {
+"use_external/enabled": true,
+"use_external/path": "res://Assets/Ida Faber/Beach Girls/Materials/Swimsuit 01/MAT_BG_SWIMSUIT_01 Color 03.material"
+},
+"MAT_BG_SWIMSUIT_02": {
+"use_external/enabled": true,
+"use_external/path": "res://Assets/Ida Faber/Beach Girls/Materials/Swimsuit 02/MAT_BG_SWIMSUIT_02 Color 02.material"
+},
+"MAT_BG_SWIMSUIT_03": {
+"use_external/enabled": true,
+"use_external/path": "res://Assets/Ida Faber/Beach Girls/Materials/Swimsuit 03/MAT_BG_SWIMSUIT_03 Color 06.material"
+},
+"MAT_BG_TEARS2": {
+"use_external/enabled": true,
+"use_external/path": "res://Assets/Ida Faber/Beach Girls/Materials/Base/MAT_BG_TEARS.material"
+},
+"MAT_BG_TEARS3": {
+"use_external/enabled": true,
+"use_external/path": "res://Assets/Ida Faber/Beach Girls/Materials/Base/MAT_BG_TEARS.material"
+},
+"MAT_BG_TEETH2": {
+"use_external/enabled": true,
+"use_external/path": "res://Assets/Ida Faber/Beach Girls/Materials/Base/MAT_BG_TEETH.material"
+},
+"MAT_BG_TEETH3": {
+"use_external/enabled": true,
+"use_external/path": "res://Assets/Ida Faber/Beach Girls/Materials/Base/MAT_BG_TEETH.material"
+}
+},
+"meshes": {
+"Root Scene_SK_BG_BIKINI_01": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/Ida Faber/Beach Girls/Mesh/extracted/SK_BeachGirl_AllPartsTogether.SK_BG_BIKINI_01.mesh"
+},
+"Root Scene_SK_BG_BIKINI_01_cloth": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/Ida Faber/Beach Girls/Mesh/extracted/SK_BeachGirl_AllPartsTogether.SK_BG_BIKINI_01_cloth.mesh"
+},
+"Root Scene_SK_BG_BIKINI_02": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/Ida Faber/Beach Girls/Mesh/extracted/SK_BeachGirl_AllPartsTogether.SK_BG_BIKINI_02.mesh"
+},
+"Root Scene_SK_BG_BIKINI_03": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/Ida Faber/Beach Girls/Mesh/extracted/SK_BeachGirl_AllPartsTogether.SK_BG_BIKINI_03.mesh"
+},
+"Root Scene_SK_BG_BODY_FULL": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/Ida Faber/Beach Girls/Mesh/extracted/SK_BeachGirl_AllPartsTogether.SK_BG_BODY_FULL.mesh"
+},
+"Root Scene_SK_BG_BRACELET_01": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/Ida Faber/Beach Girls/Mesh/extracted/SK_BeachGirl_AllPartsTogether.SK_BG_BRACELET_01.mesh"
+},
+"Root Scene_SK_BG_BRACELET_02": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/Ida Faber/Beach Girls/Mesh/extracted/SK_BeachGirl_AllPartsTogether.SK_BG_BRACELET_02.mesh"
+},
+"Root Scene_SK_BG_CENSOR": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/Ida Faber/Beach Girls/Mesh/extracted/SK_BeachGirl_AllPartsTogether.SK_BG_CENSOR.mesh"
+},
+"Root Scene_SK_BG_EARRINGS": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/Ida Faber/Beach Girls/Mesh/extracted/SK_BeachGirl_AllPartsTogether.SK_BG_EARRINGS.mesh"
+},
+"Root Scene_SK_BG_HAIR_BANGS_01": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/Ida Faber/Beach Girls/Mesh/extracted/SK_BeachGirl_AllPartsTogether.SK_BG_HAIR_BANGS_01.mesh"
+},
+"Root Scene_SK_BG_HAIR_BANGS_01_for_hat": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/Ida Faber/Beach Girls/Mesh/extracted/SK_BeachGirl_AllPartsTogether.SK_BG_HAIR_BANGS_01_for_hat.mesh"
+},
+"Root Scene_SK_BG_HAIR_BANGS_02": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/Ida Faber/Beach Girls/Mesh/extracted/SK_BeachGirl_AllPartsTogether.SK_BG_HAIR_BANGS_02.mesh"
+},
+"Root Scene_SK_BG_HAIR_BANGS_02_for_hat": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/Ida Faber/Beach Girls/Mesh/extracted/SK_BeachGirl_AllPartsTogether.SK_BG_HAIR_BANGS_02_for_hat.mesh"
+},
+"Root Scene_SK_BG_HAIR_BUN": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/Ida Faber/Beach Girls/Mesh/extracted/SK_BeachGirl_AllPartsTogether.SK_BG_HAIR_BUN.mesh"
+},
+"Root Scene_SK_BG_HAIR_LOOSE": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/Ida Faber/Beach Girls/Mesh/extracted/SK_BeachGirl_AllPartsTogether.SK_BG_HAIR_LOOSE.mesh"
+},
+"Root Scene_SK_BG_HAIR_LOOSE_for_hat": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/Ida Faber/Beach Girls/Mesh/extracted/SK_BeachGirl_AllPartsTogether.SK_BG_HAIR_LOOSE_for_hat.mesh"
+},
+"Root Scene_SK_BG_HAIR_PONYTAIL": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/Ida Faber/Beach Girls/Mesh/extracted/SK_BeachGirl_AllPartsTogether.SK_BG_HAIR_PONYTAIL.mesh"
+},
+"Root Scene_SK_BG_HAIR_PONYTAIL_for_hat": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/Ida Faber/Beach Girls/Mesh/extracted/SK_BeachGirl_AllPartsTogether.SK_BG_HAIR_PONYTAIL_for_hat.mesh"
+},
+"Root Scene_SK_BG_HAIR_SCALP": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/Ida Faber/Beach Girls/Mesh/extracted/SK_BeachGirl_AllPartsTogether.SK_BG_HAIR_SCALP.mesh"
+},
+"Root Scene_SK_BG_HAIR_SCALP_for_hat": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/Ida Faber/Beach Girls/Mesh/extracted/SK_BeachGirl_AllPartsTogether.SK_BG_HAIR_SCALP_for_hat.mesh"
+},
+"Root Scene_SK_BG_HAIR_TWINTAILS": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/Ida Faber/Beach Girls/Mesh/extracted/SK_BeachGirl_AllPartsTogether.SK_BG_HAIR_TWINTAILS.mesh"
+},
+"Root Scene_SK_BG_HAIR_TWINTAILS_for_hat": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/Ida Faber/Beach Girls/Mesh/extracted/SK_BeachGirl_AllPartsTogether.SK_BG_HAIR_TWINTAILS_for_hat.mesh"
+},
+"Root Scene_SK_BG_HAT": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/Ida Faber/Beach Girls/Mesh/extracted/SK_BeachGirl_AllPartsTogether.SK_BG_HAT.mesh"
+},
+"Root Scene_SK_BG_HEAD_01": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/Ida Faber/Beach Girls/Mesh/extracted/SK_BeachGirl_AllPartsTogether.SK_BG_HEAD_01.mesh"
+},
+"Root Scene_SK_BG_HEAD_02": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/Ida Faber/Beach Girls/Mesh/extracted/SK_BeachGirl_AllPartsTogether.SK_BG_HEAD_02.mesh"
+},
+"Root Scene_SK_BG_LEG_ACS_01": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/Ida Faber/Beach Girls/Mesh/extracted/SK_BeachGirl_AllPartsTogether.SK_BG_LEG_ACS_01.mesh"
+},
+"Root Scene_SK_BG_LEG_ACS_02": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/Ida Faber/Beach Girls/Mesh/extracted/SK_BeachGirl_AllPartsTogether.SK_BG_LEG_ACS_02.mesh"
+},
+"Root Scene_SK_BG_NECKLACE_01": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/Ida Faber/Beach Girls/Mesh/extracted/SK_BeachGirl_AllPartsTogether.SK_BG_NECKLACE_01.mesh"
+},
+"Root Scene_SK_BG_NECKLACE_02": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/Ida Faber/Beach Girls/Mesh/extracted/SK_BeachGirl_AllPartsTogether.SK_BG_NECKLACE_02.mesh"
+},
+"Root Scene_SK_BG_SHOES_01": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/Ida Faber/Beach Girls/Mesh/extracted/SK_BeachGirl_AllPartsTogether.SK_BG_SHOES_01.mesh"
+},
+"Root Scene_SK_BG_SHOES_02": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/Ida Faber/Beach Girls/Mesh/extracted/SK_BeachGirl_AllPartsTogether.SK_BG_SHOES_02.mesh"
+},
+"Root Scene_SK_BG_SUNGLASSES": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/Ida Faber/Beach Girls/Mesh/extracted/SK_BeachGirl_AllPartsTogether.SK_BG_SUNGLASSES.mesh"
+},
+"Root Scene_SK_BG_SWIMSUIT_01": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/Ida Faber/Beach Girls/Mesh/extracted/SK_BeachGirl_AllPartsTogether.SK_BG_SWIMSUIT_01.mesh"
+},
+"Root Scene_SK_BG_SWIMSUIT_02": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/Ida Faber/Beach Girls/Mesh/extracted/SK_BeachGirl_AllPartsTogether.SK_BG_SWIMSUIT_02.mesh"
+},
+"Root Scene_SK_BG_SWIMSUIT_03": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/Ida Faber/Beach Girls/Mesh/extracted/SK_BeachGirl_AllPartsTogether.SK_BG_SWIMSUIT_03.mesh"
+},
+"Root Scene_SK_BG_SWIMSUIT_03_chain_01": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/Ida Faber/Beach Girls/Mesh/extracted/SK_BeachGirl_AllPartsTogether.SK_BG_SWIMSUIT_03_chain_01.mesh"
+},
+"Root Scene_SK_BG_SWIMSUIT_03_chain_02": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/Ida Faber/Beach Girls/Mesh/extracted/SK_BeachGirl_AllPartsTogether.SK_BG_SWIMSUIT_03_chain_02.mesh"
+},
+"Root Scene_SK_BG_TOP_01": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/Ida Faber/Beach Girls/Mesh/extracted/SK_BeachGirl_AllPartsTogether.SK_BG_TOP_01.mesh"
+},
+"Root Scene_SK_BG_TOP_02": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/Ida Faber/Beach Girls/Mesh/extracted/SK_BeachGirl_AllPartsTogether.SK_BG_TOP_02.mesh"
+},
+"Root Scene_SK_BG_TOP_03": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/Ida Faber/Beach Girls/Mesh/extracted/SK_BeachGirl_AllPartsTogether.SK_BG_TOP_03.mesh"
+},
+"SK_BG_BIKINI_01": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/Ida Faber/Beach Girls/Mesh/extracted/SK_BeachGirl_AllPartsTogether.SK_BG_BIKINI_01.mesh"
+},
+"SK_BG_BIKINI_01_cloth": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/Ida Faber/Beach Girls/Mesh/extracted/SK_BeachGirl_AllPartsTogether.SK_BG_BIKINI_01_cloth.mesh"
+},
+"SK_BG_BIKINI_02": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/Ida Faber/Beach Girls/Mesh/extracted/SK_BeachGirl_AllPartsTogether.SK_BG_BIKINI_02.mesh"
+},
+"SK_BG_BIKINI_03": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/Ida Faber/Beach Girls/Mesh/extracted/SK_BeachGirl_AllPartsTogether.SK_BG_BIKINI_03.mesh"
+},
+"SK_BG_BODY_FULL": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/Ida Faber/Beach Girls/Mesh/extracted/SK_BeachGirl_AllPartsTogether.SK_BG_BODY_FULL.mesh"
+},
+"SK_BG_BRACELET_01": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/Ida Faber/Beach Girls/Mesh/extracted/SK_BeachGirl_AllPartsTogether.SK_BG_BRACELET_01.mesh"
+},
+"SK_BG_BRACELET_02": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/Ida Faber/Beach Girls/Mesh/extracted/SK_BeachGirl_AllPartsTogether.SK_BG_BRACELET_02.mesh"
+},
+"SK_BG_CENSOR": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/Ida Faber/Beach Girls/Mesh/extracted/SK_BeachGirl_AllPartsTogether.SK_BG_CENSOR.mesh"
+},
+"SK_BG_EARRINGS": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/Ida Faber/Beach Girls/Mesh/extracted/SK_BeachGirl_AllPartsTogether.SK_BG_EARRINGS.mesh"
+},
+"SK_BG_HAIR_BANGS_01": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/Ida Faber/Beach Girls/Mesh/extracted/SK_BeachGirl_AllPartsTogether.SK_BG_HAIR_BANGS_01.mesh"
+},
+"SK_BG_HAIR_BANGS_01_for_hat": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/Ida Faber/Beach Girls/Mesh/extracted/SK_BeachGirl_AllPartsTogether.SK_BG_HAIR_BANGS_01_for_hat.mesh"
+},
+"SK_BG_HAIR_BANGS_02": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/Ida Faber/Beach Girls/Mesh/extracted/SK_BeachGirl_AllPartsTogether.SK_BG_HAIR_BANGS_02.mesh"
+},
+"SK_BG_HAIR_BANGS_02_for_hat": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/Ida Faber/Beach Girls/Mesh/extracted/SK_BeachGirl_AllPartsTogether.SK_BG_HAIR_BANGS_02_for_hat.mesh"
+},
+"SK_BG_HAIR_BUN": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/Ida Faber/Beach Girls/Mesh/extracted/SK_BeachGirl_AllPartsTogether.SK_BG_HAIR_BUN.mesh"
+},
+"SK_BG_HAIR_LOOSE": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/Ida Faber/Beach Girls/Mesh/extracted/SK_BeachGirl_AllPartsTogether.SK_BG_HAIR_LOOSE.mesh"
+},
+"SK_BG_HAIR_LOOSE_for_hat": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/Ida Faber/Beach Girls/Mesh/extracted/SK_BeachGirl_AllPartsTogether.SK_BG_HAIR_LOOSE_for_hat.mesh"
+},
+"SK_BG_HAIR_PONYTAIL": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/Ida Faber/Beach Girls/Mesh/extracted/SK_BeachGirl_AllPartsTogether.SK_BG_HAIR_PONYTAIL.mesh"
+},
+"SK_BG_HAIR_PONYTAIL_for_hat": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/Ida Faber/Beach Girls/Mesh/extracted/SK_BeachGirl_AllPartsTogether.SK_BG_HAIR_PONYTAIL_for_hat.mesh"
+},
+"SK_BG_HAIR_SCALP": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/Ida Faber/Beach Girls/Mesh/extracted/SK_BeachGirl_AllPartsTogether.SK_BG_HAIR_SCALP.mesh"
+},
+"SK_BG_HAIR_SCALP_for_hat": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/Ida Faber/Beach Girls/Mesh/extracted/SK_BeachGirl_AllPartsTogether.SK_BG_HAIR_SCALP_for_hat.mesh"
+},
+"SK_BG_HAIR_TWINTAILS": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/Ida Faber/Beach Girls/Mesh/extracted/SK_BeachGirl_AllPartsTogether.SK_BG_HAIR_TWINTAILS.mesh"
+},
+"SK_BG_HAIR_TWINTAILS_for_hat": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/Ida Faber/Beach Girls/Mesh/extracted/SK_BeachGirl_AllPartsTogether.SK_BG_HAIR_TWINTAILS_for_hat.mesh"
+},
+"SK_BG_HAT": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/Ida Faber/Beach Girls/Mesh/extracted/SK_BeachGirl_AllPartsTogether.SK_BG_HAT.mesh"
+},
+"SK_BG_HEAD_01": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/Ida Faber/Beach Girls/Mesh/extracted/SK_BeachGirl_AllPartsTogether.SK_BG_HEAD_01.mesh"
+},
+"SK_BG_HEAD_02": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/Ida Faber/Beach Girls/Mesh/extracted/SK_BeachGirl_AllPartsTogether.SK_BG_HEAD_02.mesh"
+},
+"SK_BG_LEG_ACS_01": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/Ida Faber/Beach Girls/Mesh/extracted/SK_BeachGirl_AllPartsTogether.SK_BG_LEG_ACS_01.mesh"
+},
+"SK_BG_LEG_ACS_02": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/Ida Faber/Beach Girls/Mesh/extracted/SK_BeachGirl_AllPartsTogether.SK_BG_LEG_ACS_02.mesh"
+},
+"SK_BG_NECKLACE_01": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/Ida Faber/Beach Girls/Mesh/extracted/SK_BeachGirl_AllPartsTogether.SK_BG_NECKLACE_01.mesh"
+},
+"SK_BG_NECKLACE_02": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/Ida Faber/Beach Girls/Mesh/extracted/SK_BeachGirl_AllPartsTogether.SK_BG_NECKLACE_02.mesh"
+},
+"SK_BG_SHOES_01": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/Ida Faber/Beach Girls/Mesh/extracted/SK_BeachGirl_AllPartsTogether.SK_BG_SHOES_01.mesh"
+},
+"SK_BG_SHOES_02": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/Ida Faber/Beach Girls/Mesh/extracted/SK_BeachGirl_AllPartsTogether.SK_BG_SHOES_02.mesh"
+},
+"SK_BG_SUNGLASSES": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/Ida Faber/Beach Girls/Mesh/extracted/SK_BeachGirl_AllPartsTogether.SK_BG_SUNGLASSES.mesh"
+},
+"SK_BG_SWIMSUIT_01": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/Ida Faber/Beach Girls/Mesh/extracted/SK_BeachGirl_AllPartsTogether.SK_BG_SWIMSUIT_01.mesh"
+},
+"SK_BG_SWIMSUIT_02": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/Ida Faber/Beach Girls/Mesh/extracted/SK_BeachGirl_AllPartsTogether.SK_BG_SWIMSUIT_02.mesh"
+},
+"SK_BG_SWIMSUIT_03": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/Ida Faber/Beach Girls/Mesh/extracted/SK_BeachGirl_AllPartsTogether.SK_BG_SWIMSUIT_03.mesh"
+},
+"SK_BG_SWIMSUIT_03_chain_01": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/Ida Faber/Beach Girls/Mesh/extracted/SK_BeachGirl_AllPartsTogether.SK_BG_SWIMSUIT_03_chain_01.mesh"
+},
+"SK_BG_SWIMSUIT_03_chain_02": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/Ida Faber/Beach Girls/Mesh/extracted/SK_BeachGirl_AllPartsTogether.SK_BG_SWIMSUIT_03_chain_02.mesh"
+},
+"SK_BG_TOP_01": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/Ida Faber/Beach Girls/Mesh/extracted/SK_BeachGirl_AllPartsTogether.SK_BG_TOP_01.mesh"
+},
+"SK_BG_TOP_02": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/Ida Faber/Beach Girls/Mesh/extracted/SK_BeachGirl_AllPartsTogether.SK_BG_TOP_02.mesh"
+},
+"SK_BG_TOP_03": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/Ida Faber/Beach Girls/Mesh/extracted/SK_BeachGirl_AllPartsTogether.SK_BG_TOP_03.mesh"
+}
+},
+"nodes": {
+"PATH:AnimationPlayer": {
+"optimizer/enabled": true,
+"optimizer/max_angular_error": 0.00277778,
+"optimizer/max_linear_error": 0.5
+},
+"PATH:Skeleton3D": {
+"retarget/bone_map": Object(BoneMap,"resource_local_to_scene":false,"resource_name":"","profile":Object(SkeletonProfileHumanoid,"resource_local_to_scene":false,"resource_name":"","root_bone":&"Root","scale_base_bone":&"Hips","group_size":4,"bone_size":56,"script":null)
+,"bonemap":null,"bone_map/Root":&"root","bone_map/Hips":&"pelvis","bone_map/Spine":&"spine_01","bone_map/Chest":&"spine_02","bone_map/UpperChest":&"spine_03","bone_map/Neck":&"neck_01","bone_map/Head":&"head","bone_map/LeftEye":&"","bone_map/RightEye":&"","bone_map/Jaw":&"","bone_map/LeftShoulder":&"clavicle_l","bone_map/LeftUpperArm":&"upperarm_l","bone_map/LeftLowerArm":&"lowerarm_l","bone_map/LeftHand":&"hand_l","bone_map/LeftThumbMetacarpal":&"thumb_01_l","bone_map/LeftThumbProximal":&"thumb_02_l","bone_map/LeftThumbDistal":&"thumb_03_l","bone_map/LeftIndexProximal":&"index_01_l","bone_map/LeftIndexIntermediate":&"index_02_l","bone_map/LeftIndexDistal":&"index_03_l","bone_map/LeftMiddleProximal":&"middle_01_l","bone_map/LeftMiddleIntermediate":&"middle_02_l","bone_map/LeftMiddleDistal":&"middle_03_l","bone_map/LeftRingProximal":&"ring_01_l","bone_map/LeftRingIntermediate":&"ring_02_l","bone_map/LeftRingDistal":&"ring_03_l","bone_map/LeftLittleProximal":&"pinky_01_l","bone_map/LeftLittleIntermediate":&"pinky_02_l","bone_map/LeftLittleDistal":&"pinky_03_l","bone_map/RightShoulder":&"clavicle_r","bone_map/RightUpperArm":&"upperarm_r","bone_map/RightLowerArm":&"lowerarm_r","bone_map/RightHand":&"hand_r","bone_map/RightThumbMetacarpal":&"thumb_01_r","bone_map/RightThumbProximal":&"thumb_02_r","bone_map/RightThumbDistal":&"thumb_03_r","bone_map/RightIndexProximal":&"index_01_r","bone_map/RightIndexIntermediate":&"index_02_r","bone_map/RightIndexDistal":&"index_03_r","bone_map/RightMiddleProximal":&"middle_01_r","bone_map/RightMiddleIntermediate":&"middle_02_r","bone_map/RightMiddleDistal":&"middle_03_r","bone_map/RightRingProximal":&"ring_01_r","bone_map/RightRingIntermediate":&"ring_02_r","bone_map/RightRingDistal":&"ring_03_r","bone_map/RightLittleProximal":&"pinky_01_r","bone_map/RightLittleIntermediate":&"pinky_02_r","bone_map/RightLittleDistal":&"pinky_03_r","bone_map/LeftUpperLeg":&"thigh_l","bone_map/LeftLowerLeg":&"calf_l","bone_map/LeftFoot":&"foot_l","bone_map/LeftToes":&"ball_l","bone_map/RightUpperLeg":&"thigh_r","bone_map/RightLowerLeg":&"calf_r","bone_map/RightFoot":&"foot_r","bone_map/RightToes":&"ball_r","script":null)
+,
+"retarget/rest_fixer/fix_silhouette/enable": true,
+"retarget/rest_fixer/fix_silhouette/filter": [&"LeftFoot", &"RightFoot", &"LeftToes", &"RightToes"],
+"retarget/rest_fixer/fix_silhouette/threshold": 3.0,
+"retarget/rest_fixer/reset_all_bone_poses_after_import": false
+}
+}
+}
+fbx/importer=0
+fbx/allow_geometry_helper_nodes=false
+fbx/embedded_image_handling=1

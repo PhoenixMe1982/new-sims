@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="PlayerParts" load_steps=9 format=3 uid="uid://ww25p06ilpgk"]
+
+[ext_resource type="Script" uid="uid://qdcnegsvcepx" path="res://Src/Configs/PlayerPart.cs" id="1_hdq40"]
+[ext_resource type="Script" uid="uid://bjxy05ymaoq2m" path="res://Src/Configs/PlayerParts.cs" id="1_m31qn"]
+[ext_resource type="Resource" uid="uid://dp8r7rid41fsl" path="res://Resources/Configs/PlayerParts/Hairs/Hair1.tres" id="3_abx6g"]
+[ext_resource type="Resource" uid="uid://clukeaa6367rw" path="res://Resources/Configs/PlayerParts/Heads/Head1.tres" id="3_dim3q"]
+[ext_resource type="Resource" uid="uid://ddvfu45xcfph5" path="res://Resources/Configs/PlayerParts/Heads/Head2.tres" id="4_jfy1v"]
+[ext_resource type="Resource" uid="uid://bner5ojolf5vk" path="res://Resources/Configs/PlayerParts/Hairs/Hair2.tres" id="4_qq0nb"]
+[ext_resource type="Resource" uid="uid://8uo6js2i6x5b" path="res://Resources/Configs/PlayerParts/Heads/Head3.tres" id="5_6l0rc"]
+[ext_resource type="Resource" uid="uid://b77awwhlagq4a" path="res://Resources/Configs/PlayerParts/Hairs/Hair3.tres" id="5_7mafx"]
+
+[resource]
+script = ExtResource("1_m31qn")
+Heads = Dictionary[int, ExtResource("1_hdq40")]({
+1: ExtResource("3_dim3q"),
+2: ExtResource("4_jfy1v"),
+3: ExtResource("5_6l0rc")
+})
+Hairs = Dictionary[int, ExtResource("1_hdq40")]({
+1: ExtResource("3_abx6g"),
+2: ExtResource("4_qq0nb"),
+3: ExtResource("5_7mafx")
+})
+metadata/_custom_type_script = "uid://bjxy05ymaoq2m"

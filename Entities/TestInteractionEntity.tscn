@@ -1,0 +1,50 @@
+[gd_scene load_steps=8 format=3 uid="uid://b2c0mmrvvgrg"]
+
+[ext_resource type="Script" uid="uid://6nmgtwvcbj8g" path="res://Vendor/Core-Godot.git/Ecs/EcsEntity.cs" id="1_84d4h"]
+[ext_resource type="Script" uid="uid://bxgmxvvypptva" path="res://Src/Components/InteractableComponent.cs" id="2_67m17"]
+[ext_resource type="Script" uid="uid://cxvakvhk3evjr" path="res://Src/Components/StartInteractionComponent.cs" id="3_tb3fd"]
+[ext_resource type="FontFile" uid="uid://d2i6dm0bgf0lu" path="res://Resources/Fonts/Freedom-10eM.ttf" id="4_gcpq3"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_344ge"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_hptm8"]
+
+[sub_resource type="SystemFont" id="SystemFont_hptm8"]
+fallbacks = Array[Font]([ExtResource("4_gcpq3")])
+font_names = PackedStringArray("MesloLGS NF")
+font_italic = true
+generate_mipmaps = true
+
+[node name="TestTriggerEntity" type="Node"]
+script = ExtResource("1_84d4h")
+metadata/_custom_type_script = "uid://6nmgtwvcbj8g"
+
+[node name="InteractableComponent" type="Node" parent="." node_paths=PackedStringArray("Node")]
+script = ExtResource("2_67m17")
+Node = NodePath("../Area3D")
+metadata/_custom_type_script = "uid://bxgmxvvypptva"
+
+[node name="StartInteractionComponent" type="Node" parent="." node_paths=PackedStringArray("Node")]
+script = ExtResource("3_tb3fd")
+Node = NodePath("../Area3D/Label3D")
+metadata/_custom_type_script = "uid://cxvakvhk3evjr"
+
+[node name="Area3D" type="Area3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.81881, 8.24599)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+shape = SubResource("SphereShape3D_344ge")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Area3D/CollisionShape3D"]
+mesh = SubResource("SphereMesh_hptm8")
+
+[node name="Label3D" type="Label3D" parent="Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5103, 0)
+pixel_size = 0.0025
+billboard = 1
+double_sided = false
+no_depth_test = true
+text = "Press E"
+font = SubResource("SystemFont_hptm8")
+font_size = 68
+outline_size = 24

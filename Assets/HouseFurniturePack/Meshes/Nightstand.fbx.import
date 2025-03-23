@@ -1,0 +1,111 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://du3w4qgmqtjer"
+path="res://.godot/imported/Nightstand.fbx-fa0d37b6aefc7f038bcc0bf29e16d18e.scn"
+
+[deps]
+
+source_file="res://Assets/HouseFurniturePack/Meshes/Nightstand.fbx"
+dest_files=["res://.godot/imported/Nightstand.fbx-fa0d37b6aefc7f038bcc0bf29e16d18e.scn"]
+
+[params]
+
+nodes/root_type=""
+nodes/root_name=""
+nodes/apply_root_scale=true
+nodes/root_scale=1.0
+nodes/import_as_skeleton_bones=false
+nodes/use_node_type_suffixes=true
+meshes/ensure_tangents=1
+meshes/generate_lods=true
+meshes/create_shadow_meshes=false
+meshes/light_baking=2
+meshes/lightmap_texel_size=0.2
+meshes/force_disable_compression=false
+skins/use_named_skins=true
+animation/import=false
+animation/fps=30.0
+animation/trimming=true
+animation/remove_immutable_tracks=false
+animation/import_rest_as_RESET=true
+import_script/path=""
+_subresources={
+"animations": {},
+"materials": {
+"NightTable": {
+"use_external/enabled": true,
+"use_external/path": "res://Assets/HouseFurniturePack/Materials/NightTable.material"
+}
+},
+"meshes": {
+"Nightstand": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/HouseFurniturePack/Meshes/extracted/Nightstand.Nightstand.mesh"
+},
+"Nightstand_door_A": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/HouseFurniturePack/Meshes/extracted/Nightstand.Nightstand_door_A.mesh"
+},
+"Nightstand_door_B": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/HouseFurniturePack/Meshes/extracted/Nightstand.Nightstand_door_B.mesh"
+},
+"Nightstand_drawer": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/HouseFurniturePack/Meshes/extracted/Nightstand.Nightstand_drawer.mesh"
+},
+"Root Scene_Nightstand": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/HouseFurniturePack/Meshes/extracted/Nightstand.Nightstand.mesh"
+},
+"Root Scene_Nightstand_door_A": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/HouseFurniturePack/Meshes/extracted/Nightstand.Nightstand_door_A.mesh"
+},
+"Root Scene_Nightstand_door_B": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/HouseFurniturePack/Meshes/extracted/Nightstand.Nightstand_door_B.mesh"
+},
+"Root Scene_Nightstand_drawer": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/HouseFurniturePack/Meshes/extracted/Nightstand.Nightstand_drawer.mesh"
+}
+},
+"nodes": {
+"PATH:AnimationPlayer": {
+"optimizer/enabled": true,
+"optimizer/max_angular_error": 0.00277778,
+"optimizer/max_linear_error": 0.5
+}
+}
+}
+fbx/importer=0
+fbx/allow_geometry_helper_nodes=false
+fbx/embedded_image_handling=1

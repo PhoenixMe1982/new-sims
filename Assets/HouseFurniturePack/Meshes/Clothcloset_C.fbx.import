@@ -1,0 +1,181 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://v7r7vfncywhs"
+path="res://.godot/imported/Clothcloset_C.fbx-1263de1fc532d43d466b0518ae8002ac.scn"
+
+[deps]
+
+source_file="res://Assets/HouseFurniturePack/Meshes/Clothcloset_C.fbx"
+dest_files=["res://.godot/imported/Clothcloset_C.fbx-1263de1fc532d43d466b0518ae8002ac.scn"]
+
+[params]
+
+nodes/root_type=""
+nodes/root_name=""
+nodes/apply_root_scale=true
+nodes/root_scale=1.0
+nodes/import_as_skeleton_bones=false
+nodes/use_node_type_suffixes=true
+meshes/ensure_tangents=1
+meshes/generate_lods=true
+meshes/create_shadow_meshes=false
+meshes/light_baking=2
+meshes/lightmap_texel_size=0.2
+meshes/force_disable_compression=false
+skins/use_named_skins=true
+animation/import=false
+animation/fps=30.0
+animation/trimming=true
+animation/remove_immutable_tracks=false
+animation/import_rest_as_RESET=true
+import_script/path=""
+_subresources={
+"animations": {},
+"materials": {
+"Bedroom_Closets": {
+"use_external/enabled": true,
+"use_external/path": "res://Assets/HouseFurniturePack/Materials/Bedroom_Closets.material"
+}
+},
+"meshes": {
+"Closet_door_down_L": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/HouseFurniturePack/Meshes/extracted/Clothcloset_C.Closet_door_down_L.mesh"
+},
+"Closet_door_down_R": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/HouseFurniturePack/Meshes/extracted/Clothcloset_C.Closet_door_down_R.mesh"
+},
+"Closet_door_up_L": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/HouseFurniturePack/Meshes/extracted/Clothcloset_C.Closet_door_up_L.mesh"
+},
+"Closet_door_up_R": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/HouseFurniturePack/Meshes/extracted/Clothcloset_C.Closet_door_up_R.mesh"
+},
+"Clothcloset_C": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/HouseFurniturePack/Meshes/extracted/Clothcloset_C.Clothcloset_C.mesh"
+},
+"Drawer_A": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/HouseFurniturePack/Meshes/extracted/Clothcloset_C.Drawer_A.mesh"
+},
+"Drawer_B": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/HouseFurniturePack/Meshes/extracted/Clothcloset_C.Drawer_B.mesh"
+},
+"Drawer_C": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/HouseFurniturePack/Meshes/extracted/Clothcloset_C.Drawer_C.mesh"
+},
+"Drawer_D": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/HouseFurniturePack/Meshes/extracted/Clothcloset_C.Drawer_D.mesh"
+},
+"Root Scene_Closet_door_down_L": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/HouseFurniturePack/Meshes/extracted/Clothcloset_C.Closet_door_down_L.mesh"
+},
+"Root Scene_Closet_door_down_R": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/HouseFurniturePack/Meshes/extracted/Clothcloset_C.Closet_door_down_R.mesh"
+},
+"Root Scene_Closet_door_up_L": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/HouseFurniturePack/Meshes/extracted/Clothcloset_C.Closet_door_up_L.mesh"
+},
+"Root Scene_Closet_door_up_R": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/HouseFurniturePack/Meshes/extracted/Clothcloset_C.Closet_door_up_R.mesh"
+},
+"Root Scene_Clothcloset_C": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/HouseFurniturePack/Meshes/extracted/Clothcloset_C.Clothcloset_C.mesh"
+},
+"Root Scene_Drawer_A": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/HouseFurniturePack/Meshes/extracted/Clothcloset_C.Drawer_A.mesh"
+},
+"Root Scene_Drawer_B": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/HouseFurniturePack/Meshes/extracted/Clothcloset_C.Drawer_B.mesh"
+},
+"Root Scene_Drawer_C": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/HouseFurniturePack/Meshes/extracted/Clothcloset_C.Drawer_C.mesh"
+},
+"Root Scene_Drawer_D": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/HouseFurniturePack/Meshes/extracted/Clothcloset_C.Drawer_D.mesh"
+}
+},
+"nodes": {
+"PATH:AnimationPlayer": {
+"optimizer/enabled": true,
+"optimizer/max_angular_error": 0.00277778,
+"optimizer/max_linear_error": 0.5
+}
+}
+}
+fbx/importer=0
+fbx/allow_geometry_helper_nodes=false
+fbx/embedded_image_handling=1

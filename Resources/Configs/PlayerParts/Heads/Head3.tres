@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="PlayerPart" load_steps=5 format=3 uid="uid://8uo6js2i6x5b"]
+
+[ext_resource type="Texture2D" uid="uid://4yshpvd4ptxy" path="res://icon.svg" id="1_bq0q4"]
+[ext_resource type="ArrayMesh" uid="uid://dbg6s4njb2u4t" path="res://Assets/Ida Faber/Beach Girls/Mesh/extracted/SK_BeachGirl_05.SK_BG_HEAD_02.mesh" id="1_mvj3p"]
+[ext_resource type="Skin" uid="uid://o0wv4qpoulov" path="res://Assets/Ida Faber/Beach Girls/Mesh/extracted/SK_BeachGirl_02.SK_BG_HEAD_01.skin.tres" id="2_bq0q4"]
+[ext_resource type="Script" uid="uid://qdcnegsvcepx" path="res://Src/Configs/PlayerPart.cs" id="3_l4xlh"]
+
+[resource]
+script = ExtResource("3_l4xlh")
+Mesh = ExtResource("1_mvj3p")
+Skin = ExtResource("2_bq0q4")
+Icon = ExtResource("1_bq0q4")
+metadata/_custom_type_script = "uid://qdcnegsvcepx"

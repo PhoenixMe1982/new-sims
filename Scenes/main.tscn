@@ -1,0 +1,22 @@
+[gd_scene load_steps=5 format=3 uid="uid://cbhrtaa5cbys4"]
+
+[ext_resource type="Script" uid="uid://do8t3lp1ilfpj" path="res://Src/Main.cs" id="1_jjgbg"]
+[ext_resource type="Script" uid="uid://cmbf7ttvhuja0" path="res://Vendor/Core-Godot.git/Ecs/EcsWorld.cs" id="2_bo1nx"]
+[ext_resource type="Resource" uid="uid://cso0nyyj6htc6" path="res://Resources/Configs/SceneListConfig.tres" id="2_jjvhh"]
+[ext_resource type="PackedScene" uid="uid://c67rkmh2s0yod" path="res://Scenes/Home.tscn" id="4_jjvhh"]
+
+[node name="Main" type="Node" node_paths=PackedStringArray("_entitiesRoot", "_sceneParent")]
+script = ExtResource("1_jjgbg")
+_entitiesRoot = NodePath("EntitiesRoot")
+_scenesListConf = ExtResource("2_jjvhh")
+_sceneParent = NodePath("Scene")
+
+[node name="EcsWorld" type="Node" parent="."]
+script = ExtResource("2_bo1nx")
+metadata/_custom_type_script = "uid://cmbf7ttvhuja0"
+
+[node name="EntitiesRoot" type="Node3D" parent="."]
+
+[node name="Scene" type="Node" parent="."]
+
+[node name="Home" parent="Scene" instance=ExtResource("4_jjvhh")]

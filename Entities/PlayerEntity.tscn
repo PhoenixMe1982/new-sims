@@ -1,0 +1,211 @@
+[gd_scene load_steps=19 format=3 uid="uid://1cbqwlc38fec"]
+
+[ext_resource type="Script" uid="uid://6nmgtwvcbj8g" path="res://Vendor/Core-Godot.git/Ecs/EcsEntity.cs" id="1_6pay1"]
+[ext_resource type="Script" uid="uid://d3fc5n5tgin1g" path="res://Vendor/Core-Godot.git/Framework/Components/Transform3DComponent.cs" id="2_3aliq"]
+[ext_resource type="Script" uid="uid://hpktgqo6ubp1" path="res://Src/Components/NavAgentComponent.cs" id="3_pygy5"]
+[ext_resource type="Script" uid="uid://c2sph8n6n4ohr" path="res://Vendor/Core-Godot.git/Framework/Components/MoveComponent.cs" id="4_0a7e3"]
+[ext_resource type="Script" uid="uid://h25kce7kwj0r" path="res://Vendor/Core-Godot.git/Framework/Components/CharacterBodyComponent.cs" id="5_3aliq"]
+[ext_resource type="Script" uid="uid://dj4b1sy67axb8" path="res://Src/Components/AnimationTreeComponent.cs" id="6_pygy5"]
+[ext_resource type="Script" uid="uid://dex5the1kpkl" path="res://Src/Components/CharAnimationsComponent.cs" id="7_0a7e3"]
+[ext_resource type="Script" uid="uid://d2cs8n7huim1p" path="res://Vendor/Core-Godot.git/Framework/Components/TriggerDetectComponent.cs" id="8_camyp"]
+[ext_resource type="Script" uid="uid://cuukc8na0edr" path="res://Src/Components/PlayerPartsComponent.cs" id="9_camyp"]
+[ext_resource type="PackedScene" uid="uid://cenqvlyn5kctp" path="res://Scenes/Characters/sk_beach_girl_04.tscn" id="10_dp4co"]
+[ext_resource type="Resource" uid="uid://ww25p06ilpgk" path="res://Resources/Configs/PlayerParts/PlayerParts.tres" id="10_u0gji"]
+[ext_resource type="Script" uid="uid://dy6vgkmpfgydp" path="res://Src/Components/InteractionComponent.cs" id="11_dp4co"]
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_k12tt"]
+animation = &"Animations/Ch26_nonPBR_Idle"
+
+[sub_resource type="AnimationNodeTransition" id="AnimationNodeTransition_pygy5"]
+xfade_time = 0.2
+input_0/name = "idle"
+input_0/auto_advance = false
+input_0/break_loop_at_end = false
+input_0/reset = true
+input_1/name = "walk"
+input_1/auto_advance = false
+input_1/break_loop_at_end = false
+input_1/reset = true
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_wsu2k"]
+animation = &"Animations/Ch26_nonPBR_Walking"
+
+[sub_resource type="AnimationNodeBlendTree" id="AnimationNodeBlendTree_h1bgf"]
+graph_offset = Vector2(-109.628, 42.1418)
+nodes/idle/node = SubResource("AnimationNodeAnimation_k12tt")
+nodes/idle/position = Vector2(400, 80)
+nodes/movement/node = SubResource("AnimationNodeTransition_pygy5")
+nodes/movement/position = Vector2(720, 80)
+nodes/output/position = Vector2(940, 200)
+nodes/walk/node = SubResource("AnimationNodeAnimation_wsu2k")
+nodes/walk/position = Vector2(400, 260)
+node_connections = [&"movement", 0, &"idle", &"movement", 1, &"walk", &"output", 0, &"movement"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_pygy5"]
+radius = 0.354963
+height = 1.74709
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_dp4co"]
+radius = 1.4028
+
+[node name="PlayerEntity" type="Node"]
+script = ExtResource("1_6pay1")
+metadata/_custom_type_script = "uid://6nmgtwvcbj8g"
+
+[node name="Transform3DComponent" type="Node" parent="." node_paths=PackedStringArray("Node")]
+script = ExtResource("2_3aliq")
+Node = NodePath("../CharacterBody3D")
+metadata/_custom_type_script = "uid://d3fc5n5tgin1g"
+
+[node name="NavAgentComponent" type="Node" parent="." node_paths=PackedStringArray("Node")]
+script = ExtResource("3_pygy5")
+Node = NodePath("../CharacterBody3D/Visual/NavigationAgent3D")
+metadata/_custom_type_script = "uid://hpktgqo6ubp1"
+
+[node name="MoveComponent" type="Node" parent="."]
+script = ExtResource("4_0a7e3")
+Speed = 1.0
+metadata/_custom_type_script = "uid://c2sph8n6n4ohr"
+
+[node name="CharacterBodyComponent" type="Node" parent="." node_paths=PackedStringArray("Node", "Visual")]
+script = ExtResource("5_3aliq")
+Node = NodePath("../CharacterBody3D")
+Visual = NodePath("../CharacterBody3D/Visual")
+Inertia = 0.1
+metadata/_custom_type_script = "uid://h25kce7kwj0r"
+
+[node name="AnimationTreeComponent" type="Node" parent="." node_paths=PackedStringArray("Node")]
+script = ExtResource("6_pygy5")
+Node = NodePath("../CharacterBody3D/Visual/AnimationTree")
+metadata/_custom_type_script = "uid://dj4b1sy67axb8"
+
+[node name="CharAnimationsComponent" type="Node" parent="."]
+script = ExtResource("7_0a7e3")
+metadata/_custom_type_script = "uid://dex5the1kpkl"
+
+[node name="TriggerDetectComponent" type="Node" parent="." node_paths=PackedStringArray("Node")]
+script = ExtResource("8_camyp")
+Node = NodePath("../CharacterBody3D/Area3D")
+metadata/_custom_type_script = "uid://d2cs8n7huim1p"
+
+[node name="PlayerPartsComponent" type="Node" parent="." node_paths=PackedStringArray("Skeleton", "HeadAttachment", "DefaultHeadNode", "DefaultHairNode")]
+script = ExtResource("9_camyp")
+Skeleton = NodePath("../CharacterBody3D/Visual/SK_BeachGirl_04/GeneralSkeleton")
+HeadAttachment = NodePath("../CharacterBody3D/Visual/SK_BeachGirl_04/GeneralSkeleton/HeadBone")
+Parts = ExtResource("10_u0gji")
+HeadType = 2
+HairType = 2
+DefaultHeadNode = NodePath("../CharacterBody3D/Visual/SK_BeachGirl_04/GeneralSkeleton/SK_BG_HEAD_01")
+DefaultHairNode = NodePath("../CharacterBody3D/Visual/SK_BeachGirl_04/GeneralSkeleton/SK_BG_HAIR_LOOSE")
+metadata/_custom_type_script = "uid://cuukc8na0edr"
+
+[node name="InteractionComponent" type="Node" parent="."]
+script = ExtResource("11_dp4co")
+metadata/_custom_type_script = "uid://dy6vgkmpfgydp"
+
+[node name="CharacterBody3D" type="CharacterBody3D" parent="."]
+
+[node name="Visual" type="Node3D" parent="CharacterBody3D"]
+
+[node name="SK_BeachGirl_04" parent="CharacterBody3D/Visual" instance=ExtResource("10_dp4co")]
+
+[node name="GeneralSkeleton" parent="CharacterBody3D/Visual/SK_BeachGirl_04" index="0"]
+bones/7/position = Vector3(0.000816972, 1.00422, 0.00592155)
+bones/7/rotation = Quaternion(0.0411193, -1.25123e-08, -5.46592e-08, 0.999154)
+bones/8/rotation = Quaternion(-0.0875376, 0, 0, 0.996161)
+bones/9/rotation = Quaternion(-0.0450571, -2.98023e-08, -1.49012e-08, 0.998984)
+bones/10/rotation = Quaternion(0.137604, -2.98023e-08, 1.49012e-07, 0.990487)
+bones/11/rotation = Quaternion(0.554134, 0.444109, 0.467337, -0.526592)
+bones/12/rotation = Quaternion(0.0179243, 0.891064, -0.453431, 0.00912086)
+bones/13/rotation = Quaternion(0.10377, -0.699451, 0.190459, 0.680974)
+bones/14/rotation = Quaternion(-0.0130212, 0.704101, -0.0651325, 0.706987)
+bones/15/rotation = Quaternion(0.180111, 0.0139067, -0.0757163, 0.980629)
+bones/17/rotation = Quaternion(0.136192, 3.73616e-08, -0.0164358, 0.990546)
+bones/18/rotation = Quaternion(0.19553, 0.019805, -0.098807, 0.975506)
+bones/20/rotation = Quaternion(0.148016, 1.44663e-08, -0.0178628, 0.988824)
+bones/21/rotation = Quaternion(0.207999, 0.030146, -0.14023, 0.967555)
+bones/23/rotation = Quaternion(0.0914143, 1.67425e-07, -0.0110319, 0.995752)
+bones/24/rotation = Quaternion(0.251726, 0.0337651, -0.128584, 0.958624)
+bones/25/rotation = Quaternion(0.265127, -0.0130011, 0.047221, 0.962969)
+bones/26/rotation = Quaternion(0.216368, -1.43225e-07, -0.0261113, 0.975963)
+bones/27/rotation = Quaternion(-0.0810037, 0.702452, 0.392451, 0.588202)
+bones/28/rotation = Quaternion(0.209969, -0.0151951, 0.0705618, 0.97504)
+bones/28/scale = Vector3(1.00001, 1, 0.999989)
+bones/29/rotation = Quaternion(0.0322784, -0.0827696, -0.0221202, 0.9958)
+bones/32/rotation = Quaternion(0.132464, 0, -1.19209e-07, 0.991188)
+bones/33/rotation = Quaternion(0.0390929, -0.00370351, -0.0343483, 0.998638)
+bones/34/rotation = Quaternion(-0.396644, 0.309734, -0.552402, 0.664523)
+bones/37/rotation = Quaternion(0.664523, 0.552402, 0.309734, 0.396645)
+bones/40/rotation = Quaternion(-0.200177, -0.0435759, -0.672422, 0.711251)
+bones/43/rotation = Quaternion(-0.452697, 0.353282, -0.571072, 0.586629)
+bones/48/rotation = Quaternion(-0.407315, 0.390371, -0.506158, 0.65231)
+bones/53/rotation = Quaternion(0.65231, 0.506158, 0.390371, 0.407315)
+bones/58/rotation = Quaternion(-0.484312, 0.427064, -0.539691, 0.540177)
+bones/61/rotation = Quaternion(0.540177, 0.539692, 0.427064, 0.484312)
+bones/64/rotation = Quaternion(-0.0487376, 0.736721, -0.0673564, 0.671066)
+bones/68/rotation = Quaternion(0.554134, -0.444109, -0.467337, -0.526592)
+bones/69/rotation = Quaternion(-0.0179239, 0.891065, -0.453429, -0.00912075)
+bones/70/rotation = Quaternion(0.103774, 0.69945, -0.190452, 0.680976)
+bones/71/rotation = Quaternion(-0.0130331, -0.704103, 0.0651087, 0.706987)
+bones/72/rotation = Quaternion(0.180128, -0.013909, 0.0757214, 0.980626)
+bones/73/rotation = Quaternion(0.108237, -0.0017464, 0.0160382, 0.993994)
+bones/74/rotation = Quaternion(0.133203, 2.02528e-08, 0.0162332, 0.990956)
+bones/76/rotation = Quaternion(0.262174, 0.00296596, -0.0109161, 0.964954)
+bones/77/rotation = Quaternion(0.220042, 0.0359773, 0.0351, 0.974195)
+bones/78/rotation = Quaternion(0.207997, -0.0301469, 0.140236, 0.967555)
+bones/79/rotation = Quaternion(0.363732, 0.0115131, -0.0294673, 0.930966)
+bones/80/rotation = Quaternion(0.192448, -9.13984e-08, 0.0234533, 0.981027)
+bones/81/rotation = Quaternion(0.251757, -0.033769, 0.128582, 0.958616)
+bones/82/rotation = Quaternion(0.265133, 0.013001, -0.0472201, 0.962967)
+bones/83/rotation = Quaternion(0.165738, 0.102735, 0.0380577, 0.980065)
+bones/84/rotation = Quaternion(-0.080998, -0.702452, -0.392468, 0.588191)
+bones/85/rotation = Quaternion(0.209968, 0.0151955, -0.0705642, 0.97504)
+bones/86/rotation = Quaternion(-0.057473, 0.0262031, -0.00469676, 0.997992)
+bones/91/rotation = Quaternion(0.000550926, 0.0267246, 0.99943, -0.0206047)
+bones/92/rotation = Quaternion(-0.0126136, 0.952334, -0.298627, 0.0610175)
+bones/94/rotation = Quaternion(-0.01443, 0.595157, -0.803263, 0.0186545)
+bones/95/rotation = Quaternion(5.56688e-08, 0.999993, -0.00378679, -9.53936e-07)
+bones/97/rotation = Quaternion(-0.000550985, 0.0267245, 0.99943, 0.0206044)
+bones/98/rotation = Quaternion(-0.000884049, 0.98781, -0.147075, -0.0509951)
+bones/100/rotation = Quaternion(0.00776287, 0.65262, -0.757194, 0.0261556)
+bones/101/rotation = Quaternion(1.22483e-07, 0.999991, 0.00412914, 1.81924e-08)
+bones/108/rotation = Quaternion(0.687474, -0.614358, 0.387226, -2.96691e-07)
+
+[node name="SK_BG_HAIR_BANGS_02" parent="CharacterBody3D/Visual/SK_BeachGirl_04/GeneralSkeleton" index="6"]
+visible = false
+
+[node name="Jigglebone" parent="CharacterBody3D/Visual/SK_BeachGirl_04/GeneralSkeleton" index="9"]
+transform = Transform3D(0.997322, -0.0559102, -0.0471535, 0.0522381, 0.995753, -0.0758075, 0.0511917, 0.0731412, 0.996007, 0.142289, 1.37208, -0.879078)
+
+[node name="Jigglebone2" parent="CharacterBody3D/Visual/SK_BeachGirl_04/GeneralSkeleton" index="10"]
+transform = Transform3D(0.997321, 0.0559137, 0.0471569, 0.0522424, -0.995754, 0.0757873, 0.0511943, -0.0731207, -0.996008, -0.026426, 1.36325, -0.887909)
+
+[node name="Jigglebone3" parent="CharacterBody3D/Visual/SK_BeachGirl_04/GeneralSkeleton" index="11"]
+transform = Transform3D(-0.000939131, 0.986161, 0.165789, -0.967627, -0.0427389, 0.248742, 0.252385, -0.160188, 0.954275, -0.0835059, 1.31746, -0.967268)
+
+[node name="HeadBone" type="BoneAttachment3D" parent="CharacterBody3D/Visual/SK_BeachGirl_04/GeneralSkeleton" index="12"]
+transform = Transform3D(1, 3.26787e-08, -9.38128e-08, -6.35257e-08, 0.936385, -0.350973, 7.63756e-08, 0.350973, 0.936385, 0.000817032, 1.48226, -0.00779472)
+bone_name = "Neck"
+bone_idx = 32
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="CharacterBody3D/Visual"]
+
+[node name="AnimationTree" type="AnimationTree" parent="CharacterBody3D/Visual"]
+root_node = NodePath("../SK_BeachGirl_04")
+tree_root = SubResource("AnimationNodeBlendTree_h1bgf")
+anim_player = NodePath("../SK_BeachGirl_04/AnimationPlayer")
+parameters/movement/current_state = "idle"
+parameters/movement/transition_request = ""
+parameters/movement/current_index = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.875732, 0)
+shape = SubResource("CapsuleShape3D_pygy5")
+
+[node name="Area3D" type="Area3D" parent="CharacterBody3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D/Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.987965, 0)
+shape = SubResource("SphereShape3D_dp4co")
+
+[editable path="CharacterBody3D/Visual/SK_BeachGirl_04"]

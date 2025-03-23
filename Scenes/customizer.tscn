@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://b6x6jcfkcgtmw"]
+
+[ext_resource type="Script" uid="uid://do8t3lp1ilfpj" path="res://Src/Main.cs" id="1_fojo0"]
+[ext_resource type="Script" uid="uid://cmbf7ttvhuja0" path="res://Vendor/Core-Godot.git/Ecs/EcsWorld.cs" id="1_gnouu"]
+[ext_resource type="PackedScene" uid="uid://doy7ern1xiob7" path="res://Entities/PlayerCustomizerEntity.tscn" id="1_wp2fr"]
+
+[node name="CustomizerScene" type="Node3D" node_paths=PackedStringArray("_entitiesRoot")]
+script = ExtResource("1_fojo0")
+_entitiesRoot = NodePath("EntitiesRoot")
+
+[node name="EcsWorld" type="Node" parent="."]
+script = ExtResource("1_gnouu")
+metadata/_custom_type_script = "uid://cmbf7ttvhuja0"
+
+[node name="EntitiesRoot" type="Node3D" parent="."]
+
+[node name="PlayerCustomizerEntity" parent="." instance=ExtResource("1_wp2fr")]

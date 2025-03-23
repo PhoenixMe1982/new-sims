@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="ScenesListConfig" load_steps=2 format=3 uid="uid://cso0nyyj6htc6"]
+
+[ext_resource type="Script" uid="uid://by5s436xbi3g0" path="res://Src/Configs/ScenesListConfig.cs" id="1_ysgv6"]
+
+[resource]
+script = ExtResource("1_ysgv6")
+ScenePath = Dictionary[int, String]({
+1: "res://Scenes/Home.tscn",
+2: "res://Scenes/customizer.tscn"
+})
+metadata/_custom_type_script = "uid://by5s436xbi3g0"

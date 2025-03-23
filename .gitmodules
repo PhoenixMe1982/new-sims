@@ -1,0 +1,3 @@
+[submodule "Vendor/Core-Godot.git"]
+	path = Vendor/Core-Godot.git
+	url = git@github.com:nakoff/Core-Godot.git

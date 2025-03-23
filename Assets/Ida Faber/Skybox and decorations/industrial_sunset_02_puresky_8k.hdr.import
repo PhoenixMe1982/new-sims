@@ -1,0 +1,26 @@
+[remap]
+
+importer="cubemap_texture"
+type="CompressedCubemap"
+uid="uid://bourmm873d32y"
+path.bptc="res://.godot/imported/industrial_sunset_02_puresky_8k.hdr-e6227f631ce59f25a7bf9178fab31ee1.bptc.ccube"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
+
+[deps]
+
+source_file="res://Assets/Ida Faber/Skybox and decorations/industrial_sunset_02_puresky_8k.hdr"
+dest_files=["res://.godot/imported/industrial_sunset_02_puresky_8k.hdr-e6227f631ce59f25a7bf9178fab31ee1.bptc.ccube"]
+
+[params]
+
+compress/mode=2
+compress/high_quality=false
+compress/lossy_quality=0.5
+compress/hdr_compression=1
+compress/channel_pack=0
+mipmaps/generate=true
+mipmaps/limit=-1
+slices/arrangement=1
