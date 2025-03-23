@@ -42,6 +42,10 @@ _subresources={
 },
 "meshes": {
 "KP_casserole": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
 "save_to_file/enabled": true,
 "save_to_file/make_streamable": "",
 "save_to_file/path": "res://Assets/HouseFurniturePack/Meshes/extracted/KP_casserole.KP_casserole.mesh"
