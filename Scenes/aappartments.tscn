@@ -1,4 +1,4 @@
-[gd_scene load_steps=66 format=3 uid="uid://hp583j0j1u3l"]
+[gd_scene load_steps=108 format=3 uid="uid://hp583j0j1u3l"]
 
 [ext_resource type="PackedScene" uid="uid://1cbqwlc38fec" path="res://Entities/PlayerEntity.tscn" id="1_w7lnm"]
 [ext_resource type="Material" uid="uid://d1i4vo4eko8cd" path="res://Assets/Easy Build System/Models/Materials/Glass_Material 3.material" id="2_cf30y"]
@@ -22,7 +22,6 @@
 [ext_resource type="Material" uid="uid://cmxrxyj0k8mvp" path="res://Assets/HouseFurniturePack/Materials/Carpet_C.material" id="16_7xu5k"]
 [ext_resource type="ArrayMesh" uid="uid://b1kb7dt5r6fra" path="res://Assets/HouseFurniturePack/Meshes/extracted/To_showercurtain.To_showercurtain.mesh" id="18_j5ahg"]
 [ext_resource type="ArrayMesh" uid="uid://nt8qf1nr6bpd" path="res://Assets/HouseFurniturePack/Meshes/extracted/Washingmachine.Washingmachine.mesh" id="19_6uije"]
-[ext_resource type="ArrayMesh" uid="uid://vfoxexpth1ls" path="res://Assets/Easy Build System/Models/extracted/House Furnitures Kit.Fridge Mesh.mesh" id="20_ehogk"]
 [ext_resource type="ArrayMesh" uid="uid://pty5gqcbavkq" path="res://Assets/Easy Build System/Models/extracted/House Furnitures Kit.Lamp 2 Mesh.mesh" id="21_7xu5k"]
 [ext_resource type="ArrayMesh" uid="uid://bfk7rtay5mok4" path="res://Assets/Easy Build System/Models/extracted/House Furnitures Kit.Table Mesh.mesh" id="24_frvid"]
 [ext_resource type="Texture2D" uid="uid://dc3vq2g5u0oqc" path="res://Assets/HouseFurniturePack/Textures/Carpet_C_BaseColor_1.tga" id="25_xiqck"]
@@ -47,6 +46,49 @@
 [ext_resource type="ArrayMesh" uid="uid://ba0sjiktnlnrl" path="res://Assets/HouseFurniturePack/Meshes/extracted/D_TV_standing.D_TV_standing.mesh" id="43_qqttl"]
 [ext_resource type="ArrayMesh" uid="uid://c26oqpsfgqj8t" path="res://Assets/HouseFurniturePack/Meshes/extracted/D_TV_wall.D_TV_wall.mesh" id="44_r3l5p"]
 [ext_resource type="ArrayMesh" uid="uid://bhkvnmxrlyu0e" path="res://Assets/HouseFurniturePack/Meshes/extracted/FP_vase_B.FP_vase_B.mesh" id="45_hyci8"]
+[ext_resource type="ArrayMesh" uid="uid://c4lvwky32s6lc" path="res://Assets/HouseFurniturePack/Meshes/extracted/Ventilationgrid.Ventilationgrid.mesh" id="47_jdryd"]
+[ext_resource type="ArrayMesh" uid="uid://cxndfo1mvib4h" path="res://Assets/HouseFurniturePack/Meshes/extracted/T_toiletpaper_solo.T_toiletpaper_solo.mesh" id="48_uqms8"]
+[ext_resource type="ArrayMesh" uid="uid://3qwmc8nfiydp" path="res://Assets/HouseFurniturePack/Meshes/extracted/T_toiletpaper.T_toiletpaper.mesh" id="49_stxl0"]
+[ext_resource type="ArrayMesh" uid="uid://cnljxp7260hlq" path="res://Assets/HouseFurniturePack/Meshes/extracted/T_toilet.T_toilet.mesh" id="50_41wrj"]
+[ext_resource type="ArrayMesh" uid="uid://dhe1k6l2dw5rm" path="res://Assets/HouseFurniturePack/Meshes/extracted/T_soap.T_soap.mesh" id="51_2yq1a"]
+[ext_resource type="ArrayMesh" uid="uid://dno53umtf74pn" path="res://Assets/HouseFurniturePack/Meshes/extracted/T_sink.T_sink.mesh" id="52_cinxj"]
+[ext_resource type="ArrayMesh" uid="uid://c0nf53konrmox" path="res://Assets/HouseFurniturePack/Meshes/extracted/T_shampoo.T_shampoo.mesh" id="53_jxcfg"]
+[ext_resource type="ArrayMesh" uid="uid://c0w3rve7jy8kb" path="res://Assets/HouseFurniturePack/Meshes/extracted/T_bathtub.T_bathtub.mesh" id="54_nwshw"]
+[ext_resource type="ArrayMesh" uid="uid://k4xbrxxtsoh3" path="res://Assets/HouseFurniturePack/Meshes/extracted/To_towel_table_B.To_towel_table_B.mesh" id="55_6i2cg"]
+[ext_resource type="ArrayMesh" uid="uid://cq2ip3nvkn7il" path="res://Assets/HouseFurniturePack/Meshes/extracted/To_towel_table_A.To_towel_table_A.mesh" id="56_owwgb"]
+[ext_resource type="ArrayMesh" uid="uid://bajbkq3urlliy" path="res://Assets/HouseFurniturePack/Meshes/extracted/To_towel_hanging.To_towel_hanging.mesh" id="57_yc81a"]
+[ext_resource type="ArrayMesh" uid="uid://d4l4b168iqyik" path="res://Assets/HouseFurniturePack/Meshes/extracted/To_toilet_shelf.To_toilet_shelf.mesh" id="58_c1fc7"]
+[ext_resource type="ArrayMesh" uid="uid://celnpk65apjyr" path="res://Assets/HouseFurniturePack/Meshes/extracted/To_showercurtain.To_showercurtain_pole.mesh" id="59_a8xg0"]
+[ext_resource type="ArrayMesh" uid="uid://bv1lumi1evyct" path="res://Assets/HouseFurniturePack/Meshes/extracted/To_laundrybasket.To_laundrybasket.mesh" id="60_wbj14"]
+[ext_resource type="ArrayMesh" uid="uid://bynrvb3qsey3r" path="res://Assets/HouseFurniturePack/Meshes/extracted/To_basket.To_basket.mesh" id="61_m1dpc"]
+[ext_resource type="ArrayMesh" uid="uid://dvhdc1rtq0tih" path="res://Assets/HouseFurniturePack/Meshes/extracted/Sidetable_TV.Sidetable_TV_drawer_D.mesh" id="62_shp2e"]
+[ext_resource type="ArrayMesh" uid="uid://b1otwax7c8aio" path="res://Assets/HouseFurniturePack/Meshes/extracted/Powersocket.Powersocket.mesh" id="63_km8b3"]
+[ext_resource type="ArrayMesh" uid="uid://d0nunojy8wb2n" path="res://Assets/HouseFurniturePack/Meshes/extracted/Painting_wide_B.Painting_wide_B.mesh" id="64_xi34n"]
+[ext_resource type="ArrayMesh" uid="uid://dgqw7k4i0mvgu" path="res://Assets/HouseFurniturePack/Meshes/extracted/Painting_large_A.Painting_large_A.mesh" id="65_1hen1"]
+[ext_resource type="ArrayMesh" uid="uid://co1ig27cnf58l" path="res://Assets/HouseFurniturePack/Meshes/extracted/Painting_G.Painting_G.mesh" id="66_502n4"]
+[ext_resource type="ArrayMesh" uid="uid://bubvllnbrsfx5" path="res://Assets/HouseFurniturePack/Meshes/extracted/Painting_F.Painting_F.mesh" id="67_7oayc"]
+[ext_resource type="ArrayMesh" uid="uid://d2eexf5mn51ig" path="res://Assets/HouseFurniturePack/Meshes/extracted/Newspaper.Newspaper.mesh" id="68_tf7ej"]
+[ext_resource type="ArrayMesh" uid="uid://dk2le5iir15ku" path="res://Assets/HouseFurniturePack/Meshes/extracted/LP_magazine.LP_magazine.mesh" id="69_itobw"]
+[ext_resource type="ArrayMesh" uid="uid://dse8riwon4w3n" path="res://Assets/HouseFurniturePack/Meshes/extracted/Lightswitch.Lightswitch.mesh" id="70_5gbum"]
+[ext_resource type="ArrayMesh" uid="uid://crpulmncrs7kt" path="res://Assets/HouseFurniturePack/Meshes/extracted/Lamp_wall_toilet.Lamp_wall_toilet.mesh" id="71_ubcer"]
+[ext_resource type="ArrayMesh" uid="uid://c1in04koycu5o" path="res://Assets/HouseFurniturePack/Meshes/extracted/Lamp_wall_fluorescent.Lamp_wall_fluorescent.mesh" id="72_wm1bc"]
+[ext_resource type="ArrayMesh" uid="uid://c5jw3lud0l1vi" path="res://Assets/HouseFurniturePack/Meshes/extracted/Lamp_wall_chan.Lamp_wall_chan.mesh" id="73_j5hl5"]
+[ext_resource type="ArrayMesh" uid="uid://bry5daltoqyec" path="res://Assets/HouseFurniturePack/Meshes/extracted/Lamp_table_B.Lamp_table_B.mesh" id="74_8ijtq"]
+[ext_resource type="ArrayMesh" uid="uid://ct5752s0bbs2o" path="res://Assets/HouseFurniturePack/Meshes/extracted/Lamp_table_A.Lamp_table_A.mesh" id="75_55uwh"]
+[ext_resource type="ArrayMesh" uid="uid://cd0rkmkyhg4bb" path="res://Assets/HouseFurniturePack/Meshes/extracted/Lamp_stand.Lamp_stand.mesh" id="76_l3p4x"]
+[ext_resource type="ArrayMesh" uid="uid://vy8p7nlinu7k" path="res://Assets/HouseFurniturePack/Meshes/extracted/Lamp_floor.Lamp_floor.mesh" id="77_i0e0d"]
+[ext_resource type="ArrayMesh" uid="uid://dejdn1ovsxgwn" path="res://Assets/HouseFurniturePack/Meshes/extracted/Lamp_kitchen_A.Lamp_kitchen_A.mesh" id="78_83pqa"]
+[ext_resource type="ArrayMesh" uid="uid://c68c57xhi73f1" path="res://Assets/HouseFurniturePack/Meshes/extracted/Kitchen_chair_fabric.Kitchen_chair_fabric.mesh" id="79_irlpa"]
+[ext_resource type="ArrayMesh" uid="uid://b7uoosq7wen3a" path="res://Assets/HouseFurniturePack/Meshes/extracted/Kitcabinet_upper_corner.Kitcabinet_upper_corner.mesh" id="80_h2cmg"]
+[ext_resource type="ArrayMesh" uid="uid://dvw0purqrj56p" path="res://Assets/HouseFurniturePack/Meshes/extracted/Kitcabinet_low_counter_solo.Kitcabinet_low_counter_solo.mesh" id="81_5vhg8"]
+[ext_resource type="ArrayMesh" uid="uid://d1dympr6rckex" path="res://Assets/HouseFurniturePack/Meshes/extracted/Kitcabinet_low_corner.Kitcabinet_low_corner.mesh" id="82_u0uoy"]
+[ext_resource type="ArrayMesh" uid="uid://c052yowywxd6i" path="res://Assets/HouseFurniturePack/Meshes/extracted/Kitcabinet_low_1x_dishwasher.Kitcabinet_low_1x_dishwasher.mesh" id="83_50poo"]
+[ext_resource type="ArrayMesh" uid="uid://deiiepi44vvld" path="res://Assets/HouseFurniturePack/Meshes/extracted/Kitcabinet_low_1x_B.Kitcabinet_low_1x_B.mesh" id="84_c6jfy"]
+[ext_resource type="ArrayMesh" uid="uid://ck5uvradjwpbq" path="res://Assets/HouseFurniturePack/Meshes/extracted/Kitcabinet_full_corner_bar.Kitcabinet_full_corner_bar.mesh" id="85_g75q8"]
+[ext_resource type="ArrayMesh" uid="uid://qtkrmhd83s5g" path="res://Assets/HouseFurniturePack/Meshes/extracted/Kitcabinet_extra_pilar.Kitcabinet_extra_pilar.mesh" id="86_2s83c"]
+[ext_resource type="ArrayMesh" uid="uid://b8fhcr1ptwkiy" path="res://Assets/HouseFurniturePack/Meshes/extracted/Fridge.Fridge_Doors.mesh" id="87_sk746"]
+[ext_resource type="ArrayMesh" uid="uid://btekqxu0lf23a" path="res://Assets/HouseFurniturePack/Meshes/extracted/Fridge.Fridge.mesh" id="88_3sxne"]
+[ext_resource type="ArrayMesh" uid="uid://dk4b5gb6gnhjm" path="res://Assets/HouseFurniturePack/Meshes/extracted/Kitchen_table_large.Kitchen_table_large.mesh" id="89_724l3"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6uije"]
 albedo_texture = ExtResource("4_j5ahg")
@@ -112,7 +154,7 @@ albedo_texture = ExtResource("25_xiqck")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.76036, -0.0290654, 0.0121298)
 
 [node name="HouseModularBuildingKit_wallMesh4" type="MeshInstance3D" parent="walls"]
-transform = Transform3D(0.771559, 0, 0, 0, 1.8, 0, 0, 0, 1, -6.00596, 0, -0.862542)
+transform = Transform3D(0.984098, 0, 0, 0, 1.8, 0, 0, 0, 1, -5.78325, 0, -0.862542)
 material_override = ExtResource("2_cf30y")
 mesh = ExtResource("3_eg53y")
 skeleton = NodePath("../..")
@@ -124,19 +166,19 @@ mesh = ExtResource("3_eg53y")
 skeleton = NodePath("../..")
 
 [node name="HouseModularBuildingKit_wallMesh9" type="MeshInstance3D" parent="walls"]
-transform = Transform3D(-3.67617e-08, 0, 0.0475392, 0, 0.802939, 0, -0.841011, 0, -2.07801e-09, -6.91536, 1.33635, 3.05697)
+transform = Transform3D(-3.84097e-08, 0, 0.0475392, 0, 0.802939, 0, -0.878713, 0, -2.07801e-09, -6.91536, 1.06855, 2.41664)
+material_override = SubResource("StandardMaterial3D_6uije")
+mesh = ExtResource("3_eg53y")
+skeleton = NodePath("../..")
+
+[node name="HouseModularBuildingKit_wallMesh20" type="MeshInstance3D" parent="walls"]
+transform = Transform3D(0.968244, 0, 5.55112e-15, 0, 0.802939, 0, 6.65498e-14, 0, 0.0475392, -5.76458, 1.06855, -0.800961)
 material_override = SubResource("StandardMaterial3D_6uije")
 mesh = ExtResource("3_eg53y")
 skeleton = NodePath("../..")
 
 [node name="HouseModularBuildingKit_wallMesh13" type="MeshInstance3D" parent="walls"]
-transform = Transform3D(-3.67617e-08, 0, 0.0475392, 0, 0.802939, 0, -0.841011, 0, -2.07801e-09, -6.91536, 1.33635, -1.16882)
-material_override = SubResource("StandardMaterial3D_6uije")
-mesh = ExtResource("3_eg53y")
-skeleton = NodePath("../..")
-
-[node name="HouseModularBuildingKit_wallMesh12" type="MeshInstance3D" parent="walls"]
-transform = Transform3D(3.62096e-08, -6.09463e-09, 0.0475392, -0.000499232, -0.802939, -3.59628e-10, 0.841159, -0.00047656, -2.04665e-09, -6.91536, 3.35315, 0.919903)
+transform = Transform3D(-3.81286e-08, 0, 0.0475392, 0, 0.802939, 0, -0.872283, 0, -2.07801e-09, -6.91536, 1.06855, 0.231674)
 material_override = SubResource("StandardMaterial3D_6uije")
 mesh = ExtResource("3_eg53y")
 skeleton = NodePath("../..")
@@ -432,7 +474,7 @@ skeleton = NodePath("../../..")
 transform = Transform3D(1.22811, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 7.70594, 0, 10.5679)
 
 [node name="KitcabinetLow1xStove_kitcabinetLow1xStove" type="MeshInstance3D" parent="."]
-transform = Transform3D(0.0402075, 0, 1.49946, 0, 1.5, 0, -1.49946, 0, 0.0402075, -4.99245, 0, 1.19665)
+transform = Transform3D(-5.24537e-08, 0, 1.2, 0, 1.2, 0, -1.2, 0, -5.24537e-08, -5.15, 0, 1.36867)
 mesh = ExtResource("12_4rh74")
 
 [node name="PlantInteriorAglaonema_plantInteriorAglaonema" type="MeshInstance3D" parent="."]
@@ -440,32 +482,32 @@ transform = Transform3D(3.082, 0, 1.27736, 0, 8.01035, 0, -1.27736, 0, 3.082, -4
 mesh = ExtResource("13_dqpk8")
 
 [node name="SofaLarge_sofaCushionA" type="MeshInstance3D" parent="."]
-transform = Transform3D(1.47412, 0.239849, 0.13941, -0.244056, 1.4796, 0.0350698, -0.131906, -0.0571474, 1.4931, 0.0895794, 0.980666, 6.44308)
+transform = Transform3D(1.47412, 0.239849, 0.13941, -0.244056, 1.4796, 0.0350698, -0.131906, -0.0571474, 1.4931, 0.123914, 0.973952, 6.41365)
 material_override = ExtResource("14_ehogk")
 mesh = ExtResource("14_0ke85")
 
 [node name="SofaLarge_sofaCushionA2" type="MeshInstance3D" parent="."]
-transform = Transform3D(1.42079, 0, -0.480994, 0, 1.5, 0, 0.480994, 0, 1.42079, -0.0509365, 0.980666, 7.73333)
+transform = Transform3D(1.42079, 0, -0.480994, 0, 1.5, 0, 0.480994, 0, 1.42079, 0.135449, 0.980666, 7.87557)
 material_override = ExtResource("14_ehogk")
 mesh = ExtResource("14_0ke85")
 
 [node name="SofaLarge_sofaCushionB" type="MeshInstance3D" parent="."]
-transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0.058308, 0.909181, 5.65571)
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0.0730227, 0.909181, 5.68514)
 material_override = ExtResource("16_7xu5k")
 mesh = ExtResource("15_o87lm")
 
 [node name="SofaLarge_sofaCushionB2" type="MeshInstance3D" parent="."]
-transform = Transform3D(1.0683, 0.31668, -1.00422, -0.23074, 1.46619, 0.216899, 1.02737, 0, 1.09293, 0.152983, 0.909181, 7.25106)
+transform = Transform3D(1.0683, 0.31668, -1.00422, -0.23074, 1.46619, 0.216899, 1.02737, 0, 1.09293, 0.138269, 0.912355, 7.06958)
 material_override = ExtResource("16_7xu5k")
 mesh = ExtResource("15_o87lm")
 
 [node name="SofaLarge_sofaCushionB3" type="MeshInstance3D" parent="."]
-transform = Transform3D(-0.453181, 0, -1.4299, 0, 1.5, 0, 1.4299, 0, -0.453181, 0.058308, 0.909181, 8.30958)
+transform = Transform3D(-0.453181, 0, -1.4299, 0, 1.5, 0, 1.4299, 0, -0.453181, 0.0681175, 0.909181, 8.29977)
 material_override = ExtResource("16_7xu5k")
 mesh = ExtResource("15_o87lm")
 
 [node name="SofaLarge_sofaStool2" type="MeshInstance3D" parent="."]
-transform = Transform3D(1.24601, 0, -0.0956451, 0, 1.5, 0, 0.0947159, 0, 1.25823, -1.91411, 0, 7.0445)
+transform = Transform3D(1.24109, 0, -0.147026, 0, 1.5, 0, 0.145597, 0, 1.25327, -1.59945, 0, 7.17036)
 mesh = ExtResource("11_c3d25")
 
 [node name="ToShowercurtain_toShowercurtain" type="MeshInstance3D" parent="."]
@@ -473,12 +515,8 @@ transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 5.08422, 4.05879, 0.721425)
 mesh = ExtResource("18_j5ahg")
 
 [node name="Washingmachine_washingmachine" type="MeshInstance3D" parent="."]
-transform = Transform3D(-6.55671e-08, 0, 1.5, 0, 1.5, 0, -1.5, 0, -6.55671e-08, 4.21559, 0, 1.42953)
+transform = Transform3D(-6.55671e-08, 0, 1.13751, 0, 1.5, 0, -1.5, 0, -4.97221e-08, 4.10805, 0, 1.33481)
 mesh = ExtResource("19_6uije")
-
-[node name="HouseFurnituresKit_fridgeMesh" type="MeshInstance3D" parent="."]
-transform = Transform3D(1.33466, 0, 0, 0, 1.32648, 0, 0, 0, 1.08126, -2.77201, -0.0405954, -0.249345)
-mesh = ExtResource("20_ehogk")
 
 [node name="HouseFurnituresKit_lamp2Mesh" type="MeshInstance3D" parent="."]
 transform = Transform3D(1.42086, 0, 0.480796, 0, 1.5, 0, -0.480796, 0, 1.42086, 7.16345, 0.012973, 9.94566)
@@ -511,11 +549,11 @@ transform = Transform3D(0.294279, 0, -1.47085, 0, 1.30738, 0, 1.47085, 0, 0.2942
 transform = Transform3D(-1.48356, 0, -0.221455, 0, 1.5, 0, 0.221455, 0, -1.48356, 8.70563, 0, 8.7579)
 
 [node name="PlantInteriorYucca_plantInteriorYucca" type="MeshInstance3D" parent="."]
-transform = Transform3D(1.74306, 0, 0.980682, 0, 2, 0, -0.980682, 0, 1.74306, 1.63438, 0.0326844, 9.83416)
+transform = Transform3D(1.74306, 0, 0.980682, 0, 2, 0, -0.980682, 0, 1.74306, 1.64216, 0.0326844, 9.89643)
 mesh = ExtResource("30_iq61h")
 
 [node name="PlantInteriorYucca_plantInteriorYucca2" type="MeshInstance3D" parent="."]
-transform = Transform3D(-0.821342, 0, -1.82357, 0, 2, 0, 1.82357, 0, -0.821342, 1.52676, 0.0326844, 4.87967)
+transform = Transform3D(-1.70963, 0, 1.03787, 0, 2, 0, -1.03787, 0, -1.70963, 1.42558, 0.0326844, 4.73957)
 mesh = ExtResource("30_iq61h")
 
 [node name="ShelfA_shelfA" type="MeshInstance3D" parent="."]
@@ -527,15 +565,15 @@ transform = Transform3D(9.13524e-08, 0, 1, 0, 1, 0, -0.696633, 0, 1.31134e-07, -
 mesh = ExtResource("32_sdq66")
 
 [node name="Mirror_mirror" type="MeshInstance3D" parent="."]
-transform = Transform3D(-8.74228e-08, 0, -2, 0, 2, 0, 2, 0, -8.74228e-08, 7.73301, 2.54102, 2.40799)
+transform = Transform3D(-6.39468e-08, 0, -1.36688, 0, 1.55773, 0, 1.46293, 0, -5.97482e-08, 7.73128, 1.82883, 2.86225)
 mesh = ExtResource("33_0ij68")
 
 [node name="KitcabinetUpper1xCookerhood_kitcabinetUpper1xCookerhood" type="MeshInstance3D" parent="."]
-transform = Transform3D(-6.55671e-08, 0, 1.5, 0, 1.5, 0, -1.5, 0, -6.55671e-08, -5.16952, 2.34381, 1.04206)
+transform = Transform3D(-5.24537e-08, 0, 1.2, 0, 1.2, 0, -1.2, 0, -5.24537e-08, -7.48876, 2.34381, -1.28393)
 mesh = ExtResource("34_s8cwd")
 
 [node name="KitcabinetUpper1xA_kitcabinetUpper1xA" type="MeshInstance3D" parent="."]
-transform = Transform3D(-6.55671e-08, 0, 1.5, 0, 1.5, 0, -1.5, 0, -6.55671e-08, -5.17, 2.344, 2.54364)
+transform = Transform3D(-5.24537e-08, 0, 1.2, 0, 1.2, 0, -1.2, 0, -5.24537e-08, -7.32613, 2.344, 0.479094)
 mesh = ExtResource("36_7bn5m")
 
 [node name="BedstoolA_bedstoolA" type="MeshInstance3D" parent="."]
@@ -570,7 +608,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.4138, 0, 1.71756)
 mesh = ExtResource("40_vtqru")
 
 [node name="CarpetToilet_carpetToilet" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.90996, 0.385184, 2.66348)
+transform = Transform3D(0.0817913, 0, 2.61652, 0, 1, 0, -1.81799, 0, 0.117717, 5.98473, 0.00340718, 2.9119)
 mesh = ExtResource("41_2cueb")
 
 [node name="DTvStanding_dTvStanding" type="MeshInstance3D" parent="."]
@@ -578,9 +616,225 @@ transform = Transform3D(-0.403808, 0, 0.874, 0, 2.15754, 0, -3.23277, 0, -0.1091
 mesh = ExtResource("43_qqttl")
 
 [node name="DTvWall_dTvWall" type="MeshInstance3D" parent="."]
-transform = Transform3D(-1.58984e-07, 0, 1, 0, 3.31939, 0, -3.63714, 0, -4.37114e-08, 0.752212, 2.27803, 7.2562)
+transform = Transform3D(-1.58984e-07, 0, 1, 0, 3.31939, 0, -3.63714, 0, -4.37114e-08, 0.752212, 1.84894, 7.2562)
 mesh = ExtResource("44_r3l5p")
 
 [node name="FpVaseB_fpVaseB" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.00791, 0.883465, 7.10555)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.67155, 0.748854, 10.0748)
 mesh = ExtResource("45_hyci8")
+
+[node name="Ventilationgrid_ventilationgrid" type="MeshInstance3D" parent="."]
+transform = Transform3D(-6.55671e-08, 0, -1.5, 0, 1.5, 0, 1.5, 0, -6.55671e-08, 7.73299, 3.93033, 1.53594)
+mesh = ExtResource("47_jdryd")
+
+[node name="TToiletpaperSolo_tToiletpaperSolo" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 4.33527, 0.867036, 3.85128)
+mesh = ExtResource("48_uqms8")
+
+[node name="TToiletpaperSolo_tToiletpaperSolo2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 4.34223, 0.867036, 3.68709)
+mesh = ExtResource("48_uqms8")
+
+[node name="TToiletpaperSolo_tToiletpaperSolo3" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 4.52308, 0.867036, 3.82285)
+mesh = ExtResource("48_uqms8")
+
+[node name="TToiletpaperSolo_tToiletpaperSolo4" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 4.54364, 0.867036, 3.6635)
+mesh = ExtResource("48_uqms8")
+
+[node name="TToiletpaper_tToiletpaper" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.5, 0, -1.31134e-07, 0, 1.5, 0, 1.31134e-07, 0, -1.5, 7.73848, 0.864458, 1.06167)
+mesh = ExtResource("49_stxl0")
+
+[node name="TToilet_tToilet" type="MeshInstance3D" parent="."]
+transform = Transform3D(-6.55671e-08, 0, -1.5, 0, 1.5, 0, 1.5, 0, -6.55671e-08, 7.2442, -0.00649822, 1.52417)
+mesh = ExtResource("50_41wrj")
+
+[node name="TSoap_tSoap" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.388229, 0, -1.44889, 0, 1.5, 0, 1.44889, 0, -0.388229, 7.5659, 1.07145, 3.29945)
+mesh = ExtResource("51_2yq1a")
+
+[node name="TSink_tSink" type="MeshInstance3D" parent="."]
+transform = Transform3D(-5.20369e-08, 0, -1.12996, 0, 1.21121, 0, 1.19047, 0, -4.93921e-08, 7.72226, 0, 2.85382)
+mesh = ExtResource("52_cinxj")
+
+[node name="TShampoo_tShampoo" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.75, 0, -1.29904, 0, 1.5, 0, 1.29904, 0, 0.75, 7.5636, 1.07912, 2.38252)
+mesh = ExtResource("53_jxcfg")
+
+[node name="TBathtub_tBathtub" type="MeshInstance3D" parent="."]
+transform = Transform3D(2.25622e-07, 0, -1.75858, 0, 1.5, 0, 1.72054, 0, 2.3061e-07, 7.73347, 0, -1.02094)
+mesh = ExtResource("54_nwshw")
+
+[node name="ToTowelTableB_toTowelTableB" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.244886, 0, 1.47988, 0, 1.5, 0, -1.47988, 0, 0.244886, 4.46246, 1.31868, 3.75239)
+mesh = ExtResource("55_6i2cg")
+
+[node name="ToTowelTableB_toTowelTableB2" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.248346, 0, 1.4793, 0, 1.5, 0, -1.4793, 0, -0.248346, 4.46759, 1.39273, 3.78296)
+mesh = ExtResource("55_6i2cg")
+
+[node name="ToTowelTableB_toTowelTableB3" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.22953, 0, 1.48233, 0, 1.5, 0, -1.48233, 0, 0.22953, 4.07709, 1.30997, 3.7539)
+mesh = ExtResource("55_6i2cg")
+
+[node name="ToTowelTableA_toTowelTableA" type="MeshInstance3D" parent="."]
+transform = Transform3D(3.09199, 0, 0.275618, 0, 1.5, 0, -0.577979, 0, 1.47446, 4.03128, 1.32295, 1.48456)
+mesh = ExtResource("56_owwgb")
+
+[node name="ToTowelHanging_toTowelHanging" type="MeshInstance3D" parent="."]
+transform = Transform3D(-6.55671e-08, 0, -1.5, 0, 1.5, 0, 1.5, 0, -6.55671e-08, 7.73945, 1.93296, 3.60744)
+mesh = ExtResource("57_yc81a")
+
+[node name="ToToiletShelf_toToiletShelf" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.5, 0, 1.31134e-07, 0, 1.5, 0, -1.31134e-07, 0, -1.5, 4.25457, 0, 3.74614)
+mesh = ExtResource("58_c1fc7")
+
+[node name="ToShowercurtain_toShowercurtainPole" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.71644, 0, 0, 0, 1, 0, 0, 0, 1, 3.66983, 4.06875, 0.728556)
+mesh = ExtResource("59_a8xg0")
+
+[node name="ToLaundrybasket_toLaundrybasket" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.23408, 7.43874, 0, 3.74373)
+mesh = ExtResource("60_wbj14")
+
+[node name="ToBasket_toBasket" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.120768, 0, 1.49513, 0, 1.5, 0, -1.49513, 0, -0.120768, 4.4186, 0.322524, 3.74789)
+mesh = ExtResource("61_m1dpc")
+
+[node name="ToBasket_toBasket2" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.0461742, 0, 1.49929, 0, 1.5, 0, -1.49929, 0, -0.0461742, 4.4394, 0.814711, 3.74856)
+mesh = ExtResource("61_m1dpc")
+
+[node name="ToBasket_toBasket3" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.236203, 0, 1.48129, 0, 1.5, 0, -1.48129, 0, -0.236203, 4.07709, 1.77564, 3.73715)
+mesh = ExtResource("61_m1dpc")
+
+[node name="SidetableTv_sidetableTvDrawerD" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.98883e-08, 0, -1.81483, 0, 1.18651, 0, 1.14131, 0, -7.93289e-08, 7.34582, 0.501753, 2.88985)
+mesh = ExtResource("62_shp2e")
+
+[node name="SidetableTv_sidetableTvDrawerD2" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.98883e-08, 0, -1.81483, 0, 1.18651, 0, 1.14131, 0, -7.93289e-08, 7.34582, 0.251828, 2.88985)
+mesh = ExtResource("62_shp2e")
+
+[node name="SidetableTv_sidetableTvDrawerD3" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.98883e-08, 0, -1.81483, 0, 1.18651, 0, 1.14131, 0, -7.93289e-08, 7.34582, 0.752797, 2.88985)
+mesh = ExtResource("62_shp2e")
+
+[node name="Powersocket_powersocket" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.6792, 0, 0.246628)
+mesh = ExtResource("63_km8b3")
+
+[node name="PaintingWideB_paintingWideB" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.8779, 0, 4.70695)
+mesh = ExtResource("64_xi34n")
+
+[node name="PaintingLargeA_paintingLargeA" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.9478, -1.19209e-07, 4.66848)
+mesh = ExtResource("65_1hen1")
+
+[node name="PaintingG_paintingG" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.517, 0, 4.72681)
+mesh = ExtResource("66_502n4")
+
+[node name="PaintingF_paintingF" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.9697, 0, 4.68552)
+mesh = ExtResource("67_7oayc")
+
+[node name="Newspaper_newspaper" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.03085, 0, -0.792056, 0, 1.3, 0, 0.792056, 0, -1.03085, -2.36561, 0.723644, 9.84605)
+mesh = ExtResource("68_tf7ej")
+
+[node name="LpMagazine_lpMagazine" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.08169, -0.00642029, -0.72104, 0.027923, 1.2986, -0.0534527, 0.720527, -0.0599639, -1.08039, -2.61345, 0.73531, 9.74844)
+mesh = ExtResource("69_itobw")
+
+[node name="Lightswitch_lightswitch" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.5861, 1.19209e-07, 0.246367)
+mesh = ExtResource("70_5gbum")
+
+[node name="LampWallToilet_lampWallToilet" type="MeshInstance3D" parent="."]
+transform = Transform3D(-6.55671e-08, 0, -1.5, 0, 1.5, 0, 1.5, 0, -6.55671e-08, 7.73024, 2.78266, 2.84991)
+mesh = ExtResource("71_ubcer")
+
+[node name="LampWallFluorescent_lampWallFluorescent" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.0229, 0, 7.29436)
+mesh = ExtResource("72_wm1bc")
+
+[node name="LampWallChan_lampWallChan" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.3599, 0, 7.4578)
+mesh = ExtResource("73_j5hl5")
+
+[node name="LampTableB_lampTableB" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.1516, 0, 7.67112)
+mesh = ExtResource("74_8ijtq")
+
+[node name="LampTableA_lampTableA" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.6665, 0, 7.64595)
+mesh = ExtResource("75_55uwh")
+
+[node name="LampStand_lampStand" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0.114884, 0, 9.79579)
+mesh = ExtResource("76_l3p4x")
+
+[node name="LampFloor_lampFloor" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.3408, 0, 7.63341)
+mesh = ExtResource("77_i0e0d")
+
+[node name="LampKitchenA_lampKitchenA" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.927, 1.15052, 8.33451)
+mesh = ExtResource("78_83pqa")
+
+[node name="KitchenChairFabric_kitchenChairFabric" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.15448, 0, 0.327361, 0, 1.15642, 0, -0.327361, 0, -1.15448, -3.5876, 0, 4.16909)
+mesh = ExtResource("79_irlpa")
+
+[node name="KitchenChairFabric_kitchenChairFabric2" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.17091, 0, -0.26263, 0, 1.15642, 0, 0.26263, 0, -1.17091, -2.53202, 0, 4.02069)
+mesh = ExtResource("79_irlpa")
+
+[node name="KitcabinetUpperCorner_kitcabinetUpperCorner" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.2, -9.62464, 0, 0.29095)
+mesh = ExtResource("80_h2cmg")
+
+[node name="KitcabinetLowCounterSolo_kitcabinetLowCounterSolo" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.2, 0, 0, 0, 1.2, 0, 0, 0, 0.878476, -2.95353, -2.38419e-07, 2.96071)
+mesh = ExtResource("81_5vhg8")
+
+[node name="KitcabinetLowCorner_kitcabinetLowCorner" type="MeshInstance3D" parent="."]
+transform = Transform3D(-5.24537e-08, 0, 1.2, 0, 1.2, 0, -1.2, 0, -5.24537e-08, -5.15, 0, -0.786274)
+mesh = ExtResource("82_u0uoy")
+
+[node name="KitcabinetLowCorner_kitcabinetLowCorner2" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.2, 0, -1.04907e-07, 0, 1.2, 0, 1.04907e-07, 0, -1.2, -5.15, 0, 3.52311)
+mesh = ExtResource("82_u0uoy")
+
+[node name="KitcabinetLow1xDishwasher_kitcabinetLow1xDishwasher" type="MeshInstance3D" parent="."]
+transform = Transform3D(-5.24537e-08, 0, 1.2, 0, 1.2, 0, -1.2, 0, -5.24537e-08, -5.15, 0, 0.172374)
+mesh = ExtResource("83_50poo")
+
+[node name="KitcabinetLow1xB_kitcabinetLow1xB" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.2, -2.997, 0, -0.786)
+mesh = ExtResource("84_c6jfy")
+
+[node name="KitcabinetFullCornerBar_kitcabinetFullCornerBar" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.2, -11.1033, 0, -0.364747)
+mesh = ExtResource("85_g75q8")
+
+[node name="KitcabinetExtraPilar_kitcabinetExtraPilar" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.2, -11.8791, 0, 0.825907)
+mesh = ExtResource("86_2s83c")
+
+[node name="Fridge_fridgeDoors" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.3, 0, 0, 0, 1.3, 0, 0, 0, 1.3, -2.19435, 1.07374, 0.0294344)
+mesh = ExtResource("87_sk746")
+
+[node name="Fridge_fridge" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.3, 0, 0, 0, 1.3, 0, 0, 0, 1.3, -2.58169, 0, -0.307542)
+mesh = ExtResource("88_3sxne")
+
+[node name="KitchenTableLarge_kitchenTableLarge" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.00281002, 0, -0.635357, 0, 1, 0, 0.999996, 0, 0.00178538, -2.49334, 0, 9.84304)
+mesh = ExtResource("89_724l3")
