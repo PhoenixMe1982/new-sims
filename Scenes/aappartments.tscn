@@ -1,4 +1,4 @@
-[gd_scene load_steps=111 format=3 uid="uid://hp583j0j1u3l"]
+[gd_scene load_steps=110 format=3 uid="uid://hp583j0j1u3l"]
 
 [ext_resource type="PackedScene" uid="uid://1cbqwlc38fec" path="res://Entities/PlayerEntity.tscn" id="1_w7lnm"]
 [ext_resource type="Material" uid="uid://d1i4vo4eko8cd" path="res://Assets/Easy Build System/Models/Materials/Glass_Material 3.material" id="2_cf30y"]
@@ -29,7 +29,6 @@
 [ext_resource type="PackedScene" uid="uid://bpja0h01awpqb" path="res://Assets/HouseFurniturePack/Meshes/Book_set.fbx" id="27_4uvc6"]
 [ext_resource type="PackedScene" uid="uid://bnsdal4istyy6" path="res://Assets/HouseFurniturePack/Meshes/Couch_1seat.fbx" id="28_sdq66"]
 [ext_resource type="ArrayMesh" uid="uid://cufdog6ai5u2m" path="res://Assets/HouseFurniturePack/Meshes/extracted/Plant_interior_yucca.Plant_interior_yucca.mesh" id="30_iq61h"]
-[ext_resource type="ArrayMesh" uid="uid://dd1yhhu0knqq0" path="res://Assets/HouseFurniturePack/Meshes/extracted/Shelf_A.Shelf_A.mesh" id="31_4uvc6"]
 [ext_resource type="ArrayMesh" uid="uid://bq727ry80ycdr" path="res://Assets/HouseFurniturePack/Meshes/extracted/Shelf_B.Shelf_B.mesh" id="32_sdq66"]
 [ext_resource type="ArrayMesh" uid="uid://buxidy485dfbw" path="res://Assets/HouseFurniturePack/Meshes/extracted/Mirror.Mirror.mesh" id="33_0ij68"]
 [ext_resource type="ArrayMesh" uid="uid://3px5q8lo8ri2" path="res://Assets/HouseFurniturePack/Meshes/extracted/Kitcabinet_upper_1x_cookerhood.Kitcabinet_upper_1x_cookerhood.mesh" id="34_s8cwd"]
@@ -84,9 +83,8 @@
 [ext_resource type="ArrayMesh" uid="uid://d1dympr6rckex" path="res://Assets/HouseFurniturePack/Meshes/extracted/Kitcabinet_low_corner.Kitcabinet_low_corner.mesh" id="82_u0uoy"]
 [ext_resource type="ArrayMesh" uid="uid://c052yowywxd6i" path="res://Assets/HouseFurniturePack/Meshes/extracted/Kitcabinet_low_1x_dishwasher.Kitcabinet_low_1x_dishwasher.mesh" id="83_50poo"]
 [ext_resource type="ArrayMesh" uid="uid://deiiepi44vvld" path="res://Assets/HouseFurniturePack/Meshes/extracted/Kitcabinet_low_1x_B.Kitcabinet_low_1x_B.mesh" id="84_c6jfy"]
-[ext_resource type="ArrayMesh" uid="uid://ck5uvradjwpbq" path="res://Assets/HouseFurniturePack/Meshes/extracted/Kitcabinet_full_corner_bar.Kitcabinet_full_corner_bar.mesh" id="85_g75q8"]
-[ext_resource type="ArrayMesh" uid="uid://qtkrmhd83s5g" path="res://Assets/HouseFurniturePack/Meshes/extracted/Kitcabinet_extra_pilar.Kitcabinet_extra_pilar.mesh" id="86_2s83c"]
 [ext_resource type="ArrayMesh" uid="uid://b8fhcr1ptwkiy" path="res://Assets/HouseFurniturePack/Meshes/extracted/Fridge.Fridge_Doors.mesh" id="87_sk746"]
+[ext_resource type="Texture2D" uid="uid://b21g5sfrpkf16" path="res://Assets/Easy Build System/Models/extracted/img_6681-scaled.jpg" id="87_veuq8"]
 [ext_resource type="ArrayMesh" uid="uid://btekqxu0lf23a" path="res://Assets/HouseFurniturePack/Meshes/extracted/Fridge.Fridge.mesh" id="88_3sxne"]
 [ext_resource type="ArrayMesh" uid="uid://dk4b5gb6gnhjm" path="res://Assets/HouseFurniturePack/Meshes/extracted/Kitchen_table_large.Kitchen_table_large.mesh" id="89_724l3"]
 
@@ -159,6 +157,9 @@ sky = SubResource("Sky_uqms8")
 tonemap_mode = 2
 adjustment_enabled = true
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lq15j"]
+albedo_texture = ExtResource("87_veuq8")
+
 [node name="Node3D" type="Node3D"]
 
 [node name="PlayerEntity" parent="." instance=ExtResource("1_w7lnm")]
@@ -199,19 +200,19 @@ mesh = ExtResource("3_eg53y")
 skeleton = NodePath("../..")
 
 [node name="HouseModularBuildingKit_wallMesh2" type="MeshInstance3D" parent="walls"]
-transform = Transform3D(-1.13078e-07, 0, 1, 0, 1.8, 0, -2.58692, 0, -4.37114e-08, -6.99404, 0, 7.3248)
+transform = Transform3D(-1.16218e-07, 0, 1, 0, 1.8, 0, -2.65875, 0, -4.37114e-08, -6.99404, 0, 7.4496)
 material_override = ExtResource("4_c2fpw")
 mesh = ExtResource("3_eg53y")
 skeleton = NodePath("../..")
 
 [node name="HouseModularBuildingKit_wallMesh3" type="MeshInstance3D" parent="walls"]
-transform = Transform3D(-1.14333e-07, 0, 0.492296, 0, 1.8, 0, -2.61563, 0, -2.15189e-08, -1.01676, -4.76837e-07, 7.41279)
+transform = Transform3D(-1.14333e-07, 0, 0.492296, 0, 5.18114, 0, -2.61563, 0, -2.15189e-08, -1.01676, -4.76837e-07, 7.41279)
 material_override = ExtResource("40_j0ql6")
 mesh = ExtResource("3_eg53y")
 skeleton = NodePath("../..")
 
 [node name="HouseModularBuildingKit_wallMesh11" type="MeshInstance3D" parent="walls"]
-transform = Transform3D(-1.14333e-07, 0, 0.578983, 0, 1.8, 0, -2.61563, 0, -2.53082e-08, -1.07222, -4.76837e-07, 7.37722)
+transform = Transform3D(-1.14333e-07, 0, 0.578983, 0, 5.18114, 0, -2.61563, 0, -2.53082e-08, -1.07222, -4.76837e-07, 7.37722)
 material_override = ExtResource("4_c2fpw")
 mesh = ExtResource("3_eg53y")
 skeleton = NodePath("../..")
@@ -221,50 +222,108 @@ transform = Transform3D(-1.14333e-07, 0, 1, 0, 1.8, 0, -2.61563, 0, -4.37114e-08
 mesh = ExtResource("3_eg53y")
 skeleton = NodePath("../..")
 
+[node name="HouseModularBuildingKit_wallMesh12" type="MeshInstance3D" parent="walls"]
+transform = Transform3D(-1.14333e-07, 0, 0.5541, 0, 2.24186, 0, -2.61563, 0, -2.42205e-08, 6.03036, 4.36757, 7.37722)
+mesh = ExtResource("3_eg53y")
+skeleton = NodePath("../..")
+
+[node name="HouseModularBuildingKit_wallMesh22" type="MeshInstance3D" parent="walls"]
+transform = Transform3D(-1.14333e-07, 0, 0.5541, 0, 2.24186, 0, -2.61563, 0, -2.42205e-08, -7.03956, 4.36757, 7.37722)
+mesh = ExtResource("3_eg53y")
+skeleton = NodePath("../..")
+
 [node name="HouseModularBuildingKit_wallMesh6" type="MeshInstance3D" parent="walls"]
-transform = Transform3D(-8.75919e-08, 0, 1, 0, 1.8, 0, -2.00387, 0, -4.37114e-08, 6.04062, -4.76837e-07, 1.58348)
+transform = Transform3D(-8.75919e-08, 0, 1, 0, 1.61082, 0, -2.00387, 0, -4.37114e-08, 6.04062, -4.76837e-07, 1.58348)
 material_override = SubResource("StandardMaterial3D_0ij68")
 mesh = ExtResource("3_eg53y")
 skeleton = NodePath("../..")
 
 [node name="HouseModularBuildingKit_wallMesh14" type="MeshInstance3D" parent="walls"]
-transform = Transform3D(-5.19983e-08, 0, 0.195509, 0, 1.8, 0, -1.18958, 0, -8.54595e-09, 1.90486, -4.76837e-07, 0.545194)
+transform = Transform3D(-5.19983e-08, 0, 0.195509, 0, 1.61082, 0, -1.18958, 0, -8.54595e-09, 1.90486, -4.76837e-07, 0.545194)
 material_override = SubResource("StandardMaterial3D_0ij68")
 mesh = ExtResource("3_eg53y")
 skeleton = NodePath("../..")
 
 [node name="HouseModularBuildingKit_wallMesh15" type="MeshInstance3D" parent="walls"]
-transform = Transform3D(-5.19983e-08, 0, 0.195509, 0, 1.8, 0, -1.18958, 0, -8.54595e-09, 1.88414, -4.76837e-07, 0.545194)
+transform = Transform3D(-5.19983e-08, 0, 0.195509, 0, 1.61082, 0, -1.18958, 0, -8.54595e-09, 1.88414, -4.76837e-07, 0.545194)
 material_override = ExtResource("4_c2fpw")
 mesh = ExtResource("3_eg53y")
 skeleton = NodePath("../..")
 
 [node name="HouseModularBuildingKit_wallMesh16" type="MeshInstance3D" parent="walls"]
-transform = Transform3D(-1.28791e-08, 0, 0.195509, 0, 1.8, 0, -0.29464, 0, -8.54595e-09, 1.90486, -4.76837e-07, 3.72962)
+transform = Transform3D(-1.28791e-08, 0, 0.195509, 0, 1.61082, 0, -0.29464, 0, -8.54595e-09, 1.90486, -4.76837e-07, 3.72962)
 material_override = SubResource("StandardMaterial3D_0ij68")
 mesh = ExtResource("3_eg53y")
 skeleton = NodePath("../..")
 
 [node name="HouseModularBuildingKit_wallMesh17" type="MeshInstance3D" parent="walls"]
-transform = Transform3D(-1.28791e-08, 0, 0.195509, 0, 1.8, 0, -0.29464, 0, -8.54595e-09, 1.88414, -4.76837e-07, 3.72962)
+transform = Transform3D(-1.28791e-08, 0, 0.195509, 0, 1.61082, 0, -0.29464, 0, -8.54595e-09, 1.88414, -4.76837e-07, 3.72962)
 material_override = ExtResource("4_c2fpw")
 mesh = ExtResource("3_eg53y")
 skeleton = NodePath("../..")
 
 [node name="HouseModularBuildingKit_wallMesh7" type="MeshInstance3D" parent="walls"]
-transform = Transform3D(1.69196, 0, 0, 0, 1.8, 0, 0, 0, 0.487466, 3.89899, -0.00395891, 4.08212)
+transform = Transform3D(1.69196, 0, 0, 0, 1.61082, 0, 0, 0, 0.487466, 3.89899, -0.00395891, 4.08212)
 material_override = ExtResource("4_c2fpw")
 mesh = ExtResource("3_eg53y")
 skeleton = NodePath("../..")
 
 [node name="HouseModularBuildingKit_wallMesh18" type="MeshInstance3D" parent="walls"]
-transform = Transform3D(0.547262, 0, 0, 0, 1.8, 0, 0, 0, 0.487466, -0.418678, -0.00395891, 4.08212)
+transform = Transform3D(0.547262, 0, 0, 0, 5.18114, 0, 0, 0, 0.487466, -0.418678, -0.00395891, 4.08212)
+material_override = ExtResource("4_c2fpw")
+mesh = ExtResource("3_eg53y")
+skeleton = NodePath("../..")
+
+[node name="HouseModularBuildingKit_wallMesh21" type="MeshInstance3D" parent="walls"]
+transform = Transform3D(10.8428, 0, 0, 0, 3.98951, 0.31648, 0, -3.40544, 0.370761, -0.418678, 4.43655, 10.6987)
 material_override = ExtResource("4_c2fpw")
 mesh = ExtResource("3_eg53y")
 skeleton = NodePath("../..")
 
 [node name="HouseModularBuildingKit_wallMesh10" type="MeshInstance3D" parent="walls"]
-transform = Transform3D(1.65002, 0, 0, 0, 1.8, 0, 0, 0, 0.575482, 3.97398, -4.76837e-07, 4.03038)
+transform = Transform3D(1.65002, 0, 0, 0, 1.61082, 0, 0, 0, 0.575482, 3.97398, -4.76837e-07, 4.03038)
+material_override = SubResource("StandardMaterial3D_s8cwd")
+mesh = ExtResource("3_eg53y")
+skeleton = NodePath("../..")
+
+[node name="HouseModularBuildingKit_wallMesh23" type="MeshInstance3D" parent="walls"]
+transform = Transform3D(-8.75919e-08, 0, 1, 0, 1.61082, 0, -2.00387, 0, -4.37114e-08, 6.04062, 4.01875, 1.58348)
+material_override = SubResource("StandardMaterial3D_0ij68")
+mesh = ExtResource("3_eg53y")
+skeleton = NodePath("../..")
+
+[node name="HouseModularBuildingKit_wallMesh24" type="MeshInstance3D" parent="walls"]
+transform = Transform3D(-5.19983e-08, 0, 0.195509, 0, 1.61082, 0, -1.18958, 0, -8.54595e-09, 1.90486, 4.01875, 0.545194)
+material_override = SubResource("StandardMaterial3D_0ij68")
+mesh = ExtResource("3_eg53y")
+skeleton = NodePath("../..")
+
+[node name="HouseModularBuildingKit_wallMesh25" type="MeshInstance3D" parent="walls"]
+transform = Transform3D(-5.19983e-08, 0, 0.195509, 0, 1.61082, 0, -1.18958, 0, -8.54595e-09, 1.88414, 4.01875, 0.545194)
+material_override = ExtResource("4_c2fpw")
+mesh = ExtResource("3_eg53y")
+skeleton = NodePath("../..")
+
+[node name="HouseModularBuildingKit_wallMesh26" type="MeshInstance3D" parent="walls"]
+transform = Transform3D(-1.28791e-08, 0, 0.195509, 0, 1.61082, 0, -0.29464, 0, -8.54595e-09, 1.90486, 4.01875, 3.72962)
+material_override = SubResource("StandardMaterial3D_0ij68")
+mesh = ExtResource("3_eg53y")
+skeleton = NodePath("../..")
+
+[node name="HouseModularBuildingKit_wallMesh27" type="MeshInstance3D" parent="walls"]
+transform = Transform3D(-1.28791e-08, 0, 0.195509, 0, 1.61082, 0, -0.29464, 0, -8.54595e-09, 1.88414, 4.01875, 3.72962)
+material_override = ExtResource("4_c2fpw")
+mesh = ExtResource("3_eg53y")
+skeleton = NodePath("../..")
+
+[node name="HouseModularBuildingKit_wallMesh28" type="MeshInstance3D" parent="walls"]
+transform = Transform3D(1.69196, 0, 0, 0, 1.61082, 0, 0, 0, 0.487466, 3.89899, 4.01479, 4.08212)
+material_override = ExtResource("4_c2fpw")
+mesh = ExtResource("3_eg53y")
+skeleton = NodePath("../..")
+
+[node name="HouseModularBuildingKit_wallMesh29" type="MeshInstance3D" parent="walls"]
+transform = Transform3D(1.65002, 0, 0, 0, 1.61082, 0, 0, 0, 0.575482, 3.97398, 4.01875, 4.03038)
 material_override = SubResource("StandardMaterial3D_s8cwd")
 mesh = ExtResource("3_eg53y")
 skeleton = NodePath("../..")
@@ -544,7 +603,7 @@ transform = Transform3D(-6.55671e-08, 0, -1.5, 0, 1.5, 0, 1.5, 0, -6.55671e-08, 
 transform = Transform3D(-1.5, 0, -1.31134e-07, 0, 1.5, 0, 1.31134e-07, 0, -1.5, 8.3851, 0, 10.436)
 
 [node name="HouseFurnituresKit_tableMesh" type="MeshInstance3D" parent="."]
-transform = Transform3D(-6.13161e-08, 0, 0.616899, 0, 1, 0, -1.40275, 0, -2.69655e-08, -4.85833, 0, 7.80015)
+transform = Transform3D(-5.01807e-08, 0, 0.527638, 0, 1, 0, -1.148, 0, -2.30638e-08, -4.88181, 0, 7.73019)
 mesh = ExtResource("24_frvid")
 
 [node name="carpet" type="MeshInstance3D" parent="."]
@@ -558,7 +617,10 @@ material_override = ExtResource("26_iq61h")
 mesh = ExtResource("3_eg53y")
 
 [node name="Book_set" parent="." instance=ExtResource("27_4uvc6")]
-transform = Transform3D(0.294279, 0, -1.47085, 0, 1.30738, 0, 1.47085, 0, 0.294279, -3.64027, 0.178337, 7.33946)
+transform = Transform3D(0.189396, 0, -1.12569, 0, 1.23324, 0, 0.946631, 0, 0.225222, -3.97864, 0.168831, 7.47851)
+
+[node name="Book_set2" parent="." instance=ExtResource("27_4uvc6")]
+transform = Transform3D(-0.0556052, 0, -1.14609, 0, 1.23324, 0, 0.963789, 0, -0.0661232, -3.7469, 0.168831, 7.3811)
 
 [node name="Couch_1seat" parent="." instance=ExtResource("28_sdq66")]
 transform = Transform3D(-1.48356, 0, -0.221455, 0, 1.5, 0, 0.221455, 0, -1.48356, 8.70563, 0, 8.7579)
@@ -571,12 +633,20 @@ mesh = ExtResource("30_iq61h")
 transform = Transform3D(-1.70963, 0, 1.03787, 0, 2, 0, -1.03787, 0, -1.70963, 1.42558, 0.0326844, 4.73957)
 mesh = ExtResource("30_iq61h")
 
-[node name="ShelfA_shelfA" type="MeshInstance3D" parent="."]
-transform = Transform3D(1.0289e-07, 0, 1, 0, 1, 0, -0.784613, 0, 1.31134e-07, -5.17218, 2.69924, 5.29995)
-mesh = ExtResource("31_4uvc6")
-
 [node name="ShelfB_shelfB" type="MeshInstance3D" parent="."]
-transform = Transform3D(9.13524e-08, 0, 1, 0, 1, 0, -0.696633, 0, 1.31134e-07, -5.1759, 1.8034, 5.53604)
+transform = Transform3D(1.14159e-07, 0, 1, 0, 1, 0, -0.870549, 0, 1.31134e-07, -5.1759, 1.23496, 5.32152)
+mesh = ExtResource("32_sdq66")
+
+[node name="ShelfB_shelfB2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.14159e-07, 0, 1, 0, 1, 0, -0.870549, 0, 1.31134e-07, -5.1759, 1.55769, 5.32152)
+mesh = ExtResource("32_sdq66")
+
+[node name="ShelfB_shelfB3" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.14159e-07, 0, 1, 0, 1, 0, -0.870549, 0, 1.31134e-07, -5.1759, 1.8791, 5.32152)
+mesh = ExtResource("32_sdq66")
+
+[node name="ShelfB_shelfB4" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.14159e-07, 0, 1, 0, 1, 0, -0.870549, 0, 1.31134e-07, -5.1759, 2.2152, 5.32152)
 mesh = ExtResource("32_sdq66")
 
 [node name="Mirror_mirror" type="MeshInstance3D" parent="."]
@@ -584,11 +654,15 @@ transform = Transform3D(-6.39468e-08, 0, -1.36688, 0, 1.55773, 0, 1.46293, 0, -5
 mesh = ExtResource("33_0ij68")
 
 [node name="KitcabinetUpper1xCookerhood_kitcabinetUpper1xCookerhood" type="MeshInstance3D" parent="."]
-transform = Transform3D(-5.24537e-08, 0, 1.2, 0, 1.2, 0, -1.2, 0, -5.24537e-08, -7.48876, 2.34381, -1.28393)
+transform = Transform3D(-5.24537e-08, 0, 1.2, 0, 1.2, 0, -1.2, 0, -5.24537e-08, -5.1801, 1.5612, 1.35636)
 mesh = ExtResource("34_s8cwd")
 
 [node name="KitcabinetUpper1xA_kitcabinetUpper1xA" type="MeshInstance3D" parent="."]
-transform = Transform3D(-5.24537e-08, 0, 1.2, 0, 1.2, 0, -1.2, 0, -5.24537e-08, -7.32613, 2.344, 0.479094)
+transform = Transform3D(-5.24537e-08, 0, 1.2, 0, 1.2, 0, -1.2, 0, -5.24537e-08, -5.15252, 1.56139, 0.155642)
+mesh = ExtResource("36_7bn5m")
+
+[node name="KitcabinetUpper1xA_kitcabinetUpper1xA2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.2, 0, 3.19744e-14, 0, 1.2, 0, -3.19744e-14, 0, 1.2, -3.00284, 1.56139, -0.77659)
 mesh = ExtResource("36_7bn5m")
 
 [node name="BedstoolA_bedstoolA" type="MeshInstance3D" parent="."]
@@ -619,7 +693,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.6634, 0, 1.7091)
 mesh = ExtResource("39_j0ql6")
 
 [node name="BookSetBookshelfB_bookSetBookshelfB" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.4138, 0, 1.71756)
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -4.96099, 1.20355, 5.31774)
 mesh = ExtResource("40_vtqru")
 
 [node name="CarpetToilet_carpetToilet" type="MeshInstance3D" parent="."]
@@ -627,27 +701,62 @@ transform = Transform3D(0.0817913, 0, 2.61652, 0, 1, 0, -1.81799, 0, 0.117717, 5
 mesh = ExtResource("41_2cueb")
 
 [node name="DTvStanding_dTvStanding" type="MeshInstance3D" parent="."]
-transform = Transform3D(-0.403808, 0, 0.874, 0, 2.15754, 0, -3.23277, 0, -0.109172, -4.87074, 0.523114, 7.74711)
+transform = Transform3D(-0.403808, 0, 0.874, 0, 2.15754, 0, -3.23277, 0, -0.109172, -4.92869, 0.523114, 7.75435)
 mesh = ExtResource("43_qqttl")
 
 [node name="Light" type="Node3D" parent="DTvStanding_dTvStanding"]
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="DTvStanding_dTvStanding/Light"]
-transform = Transform3D(0.0734994, 0.145189, -0.98667, 0, 0.989346, 0.145582, 0.997295, -0.0107002, 0.0727163, -4, 4, 7)
+transform = Transform3D(0.0965707, -0.131267, -0.986632, -0.000287029, 0.991262, -0.131911, 0.995326, 0.013022, 0.0956891, -5.68434, 1.36084, 7.12413)
+light_color = Color(0.67749, 0.730305, 0.9375, 1)
 shadow_enabled = true
+shadow_opacity = 0.61
+shadow_blur = 2.865
 
 [node name="OmniLight3D" type="OmniLight3D" parent="DTvStanding_dTvStanding/Light"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.851097, 0.537344, 5.33685)
+transform = Transform3D(1, 0, 0, 0, -1, 8.9407e-08, 0, -8.9407e-08, -1, -0.813323, 0.38806, 5.33685)
+light_color = Color(1, 0.990387, 0.753906, 1)
+light_energy = 0.689
+light_size = 0.204
+light_specular = 1.354
 shadow_enabled = true
 omni_range = 2.038
 omni_attenuation = 0.245
 omni_shadow_mode = 0
 
-[node name="SpotLight3D" type="SpotLight3D" parent="DTvStanding_dTvStanding/Light"]
-transform = Transform3D(1, 0, 0, 0, -0.0739171, 0.997264, 0, -0.997264, -0.0739171, 0, 1.58632, 1.71118)
+[node name="OmniLight3D2" type="OmniLight3D" parent="DTvStanding_dTvStanding/Light"]
+transform = Transform3D(1, 0, 0, 0, -1, 8.9407e-08, 0, -8.9407e-08, -1, -1.13106, 0.880414, 13.2483)
+light_color = Color(1, 0.996338, 0.90625, 1)
+light_energy = 0.991
+light_size = 0.095
+light_specular = 8.226
 shadow_enabled = true
-shadow_bias = 0.0
-spot_range = 4.22421
+shadow_transmittance_bias = -0.403
+shadow_opacity = 0.62
+shadow_blur = 1.566
+omni_range = 5.30185
+omni_attenuation = 0.245
+omni_shadow_mode = 0
+
+[node name="SpotLight3D" type="SpotLight3D" parent="DTvStanding_dTvStanding/Light"]
+transform = Transform3D(0.943905, 0.0130276, 0.329961, -0.327649, 0.161354, 0.93092, -0.0411128, -0.986811, 0.156571, 0.978823, 0.932717, 14.676)
+light_energy = 1.679
+light_size = 0.17
+shadow_enabled = true
+shadow_normal_bias = 0.0
+shadow_blur = 7.462
+spot_range = 2.98999
+spot_angle = 43.9931
+
+[node name="SpotLight3D2" type="SpotLight3D" parent="DTvStanding_dTvStanding/Light"]
+transform = Transform3D(0.893547, 0.0130276, -0.44878, 0.441058, 0.161354, 0.882855, 0.083914, -0.986811, 0.138431, 1.05827, 0.934553, 14.733)
+light_energy = 1.679
+light_size = 0.17
+shadow_enabled = true
+shadow_normal_bias = 0.0
+shadow_blur = 7.462
+spot_range = 2.98999
+spot_angle = 43.9931
 
 [node name="DTvWall_dTvWall" type="MeshInstance3D" parent="."]
 transform = Transform3D(-1.58984e-07, 0, 1, 0, 3.31939, 0, -3.63714, 0, -4.37114e-08, 0.752212, 1.84894, 7.2562)
@@ -762,19 +871,19 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.6792, 0, 0.246628)
 mesh = ExtResource("63_km8b3")
 
 [node name="PaintingWideB_paintingWideB" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.8779, 0, 4.70695)
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 7.62278, 2.36119, 7.15595)
 mesh = ExtResource("64_xi34n")
 
 [node name="PaintingLargeA_paintingLargeA" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.9478, -1.19209e-07, 4.66848)
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -5.11595, 2.36119, 7.72639)
 mesh = ExtResource("65_1hen1")
 
 [node name="PaintingG_paintingG" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.517, 0, 4.72681)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.39233, 2.36119, 1.10603)
 mesh = ExtResource("66_502n4")
 
 [node name="PaintingF_paintingF" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.9697, 0, 4.68552)
+transform = Transform3D(-1.07597e-07, 0, -1, 0, 3.6633, 0, 2.46154, 0, -4.37114e-08, 0.652731, 2.42182, 6.96362)
 mesh = ExtResource("67_7oayc")
 
 [node name="Newspaper_newspaper" type="MeshInstance3D" parent="."]
@@ -830,7 +939,11 @@ transform = Transform3D(-1.17091, 0, -0.26263, 0, 1.15642, 0, 0.26263, 0, -1.170
 mesh = ExtResource("79_irlpa")
 
 [node name="KitcabinetUpperCorner_kitcabinetUpperCorner" type="MeshInstance3D" parent="."]
-transform = Transform3D(1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.2, -9.62464, 0, 0.29095)
+transform = Transform3D(2.98023e-08, 0, 1.2, 0, 1.2, 0, -1.2, 0, 2.98023e-08, -5.19154, 1.38243, 0.184877)
+mesh = ExtResource("80_h2cmg")
+
+[node name="KitcabinetUpperCorner_kitcabinetUpperCorner2" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.2, 0, -2.26513e-08, 0, 1.2, 0, 2.26513e-08, 0, -1.2, -4.34467, 1.38243, 3.5367)
 mesh = ExtResource("80_h2cmg")
 
 [node name="KitcabinetLowCounterSolo_kitcabinetLowCounterSolo" type="MeshInstance3D" parent="."]
@@ -853,14 +966,6 @@ mesh = ExtResource("83_50poo")
 transform = Transform3D(1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.2, -2.997, 0, -0.786)
 mesh = ExtResource("84_c6jfy")
 
-[node name="KitcabinetFullCornerBar_kitcabinetFullCornerBar" type="MeshInstance3D" parent="."]
-transform = Transform3D(1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.2, -11.1033, 0, -0.364747)
-mesh = ExtResource("85_g75q8")
-
-[node name="KitcabinetExtraPilar_kitcabinetExtraPilar" type="MeshInstance3D" parent="."]
-transform = Transform3D(1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.2, -11.8791, 0, 0.825907)
-mesh = ExtResource("86_2s83c")
-
 [node name="Fridge_fridgeDoors" type="MeshInstance3D" parent="."]
 transform = Transform3D(1.3, 0, 0, 0, 1.3, 0, 0, 0, 1.3, -2.19435, 1.07374, 0.0294344)
 mesh = ExtResource("87_sk746")
@@ -875,3 +980,10 @@ mesh = ExtResource("89_724l3")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_stxl0")
+
+[node name="background" type="Node3D" parent="."]
+
+[node name="HouseModularBuildingKit_wallMesh" type="MeshInstance3D" parent="."]
+transform = Transform3D(23.4963, 0, 0, 0, 14.9762, 0, 0, 0, 1, -4.60156, -14.0113, 31.0541)
+material_override = SubResource("StandardMaterial3D_lq15j")
+mesh = ExtResource("3_eg53y")
